@@ -1,0 +1,1319 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Angharad Ugonna" />
+            <meta name="date" content="2024-09-05" />
+        
+
+        <title>1 Introduction | Mathematical and Statistical Methods</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1725532622.552117">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725532622.552117">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1725532622.552117">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1725532622.552117', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1725532622.552117"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1725532622.552117"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1725532622.552117"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1725532622.552117" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1725532622.552117" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1725532622.552117" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1725532622.552117">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" alt="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" alt="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725532622.552117">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" alt="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Mathematical and Statistical Methods</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="index.html">Professional Mathematics</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                1 Introduction
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="index.html">Previous: Professional Mathematics</a>
+            
+            
+            <a rel="next" href="0002.html">Next: 2 Explaining our work - to the right audience</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a href="pdf/introduction.pdf"download><svg class="icon" alt="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#a0000000002">1 Introduction</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000006">1.1 What do we mean by ‘professional mathematics’?</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000020">Why is this important? Here are a few reasons</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000026">What should you have learnt by the end of this module?</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000035">1.2 Writing as a professional mathematician</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000045">Some basics</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000053">1.2.1 Some specifics</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000073">1.3 Solving equations and transposing formulae</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <!-- Latex Chapter/Part -->
+<h1 id="a0000000002">1 Introduction</h1>
+<section class="section">
+<h2 id="a0000000006">1.1 What do we mean by ‘professional mathematics’?</h2>
+<p>
+We all know that a good mathematician uses the right method and gets the right answer! But this is not the full story. There’s a lot more to being a proper mathematician, and in this module we talk about ‘how to be a professional mathematician’ or just ‘professional maths’ for short to encompass these ideas. 
+</p>
+<p>
+Each week, we’ll talk in the lecture about one aspect of behaving like a professional mathematician. But here is a rough idea of the kind of things we’re talking about: 
+</p>
+<ul class="itemize" id="a0000000007">
+<li id="a0000000008">
+<p>
+Presenting your work well, legibly, easily readable, neatly; 
+</p>
+</li>
+<li id="a0000000009">
+<p>
+Explaining what you are doing; 
+</p>
+</li>
+<li id="a0000000010">
+<p>
+Making conclusions from the ‘sums’ you do and summarising your findings; 
+</p>
+</li>
+<li id="a0000000011">
+<p>
+Using mathematical notation correctly; 
+</p>
+</li>
+<li id="a0000000012">
+<p>
+Stating any assumptions clearly, and understanding their implications; 
+</p>
+</li>
+<li id="a0000000013">
+<p>
+Building and understanding logical arguments; 
+</p>
+</li>
+<li id="a0000000014">
+<p>
+Understanding when something is proved beyond any doubt; 
+</p>
+</li>
+<li id="a0000000015">
+<p>
+Being prepared to experiment, have a go, try things out; 
+</p>
+</li>
+<li id="a0000000016">
+<p>
+Extracting the essential bits of a problem and then knowing what ‘sums’ you should do; 
+</p>
+</li>
+<li id="a0000000017">
+<p>
+Checking your answer (you won’t have a teacher with you all your life!); 
+</p>
+</li>
+<li id="a0000000018">
+<p>
+Drawing graphs accurately and professionally (eg labelling the axes every time); 
+</p>
+</li>
+<li id="a0000000019">
+<p>
+Being able to apply ideas you learnt in one place in new contexts; 
+</p>
+</li>
+</ul>
+<section class="subsubsection">
+<h4 id="a0000000020">Why is this important? Here are a few reasons</h4>
+<ul class="itemize" id="a0000000021">
+<li id="a0000000022">
+<p>
+When you behave like a professional mathematician, you make fewer mistakes with the sums (you might have to trust me for now about this – but it’s true). 
+</p>
+</li>
+<li id="a0000000023">
+<p>
+These skills are valued by employers – it’s part of why maths degrees are highly valued. 
+</p>
+</li>
+<li id="a0000000024">
+<p>
+In the future, you will need to explain your work to other people – both mathematicians and non-mathematicians – and convince them that you are correct – and scribble algebraic scrawls don’t make a convincing argument. 
+</p>
+</li>
+<li id="a0000000025">
+<p>
+Your tutors will be able to give you better feedback if they can read and understand your work. 
+</p>
+</li>
+</ul>
+<p>
+In the exam, there is more emphasis on ‘doing the sums’, but remember that you’ll do them correctly more often if you behave like a professional mathematician. 
+</p>
+</section><section class="subsubsection">
+<h4 id="a0000000026">What should you have learnt by the end of this module?</h4>
+<p>
+By the end of this module you should be able to: 
+</p>
+<ol class="enumerate" id="a0000000027">
+<li id="a0000000028" value="1">
+<p>
+Use mathematical notation correctly and present mathematical work in a logical, clear and professional manner; 
+</p>
+</li>
+<li id="a0000000029" value="2">
+<p>
+Apply algebraic manipulation, differentiation, integration and the solution of differential equations in a variety of ways; 
+</p>
+</li>
+<li id="a0000000030" value="3">
+<p>
+Apply the techniques of calculus to solve problems. 
+</p>
+</li>
+<li id="a0000000031" value="4">
+<p>
+Determine when to attempt an analytic solution and when to use a numerical one. 
+</p>
+</li>
+<li id="a0000000032" value="5">
+<p>
+Use and graph a variety of different standard functions 
+</p>
+</li>
+<li id="a0000000033" value="6">
+<p>
+Use and manipulate complex numbers 
+</p>
+</li>
+<li id="a0000000034" value="7">
+<p>
+Derive and use Taylor and Maclaurin Series. 
+</p>
+</li>
+</ol>
+</section>
+</section><section class="section">
+<h2 id="a0000000035">1.2 Writing as a professional mathematician</h2>
+<p>
+ It is always the writer’s responsibility to write neatly, clearly and legibly. Why? 
+</p>
+<p>
+So that you can 
+</p>
+<ul class="itemize" id="a0000000036">
+<li id="a0000000037">
+<p>
+Communicating ideas is important now, and in the future; 
+</p>
+</li>
+<li id="a0000000038">
+<p>
+you get better feedback; 
+</p>
+</li>
+<li id="a0000000039">
+<p>
+you keep your examiners happy; 
+</p>
+</li>
+<li id="a0000000040">
+<p>
+<b class="bfseries">you make fewer mistakes</b>
+</p>
+</li>
+</ul>
+<p>
+If tutors/examiners/your friends/your future colleagues/your future boss/your customers/clients/the project manager/the engineer/the designer/the government minister/the civil servant cannot read your work, or can misread your work, or can’t follow your work. 
+</p>
+<ul class="itemize" id="a0000000041">
+<li id="a0000000042">
+<p>
+it’s your responsibility; 
+</p>
+</li>
+<li id="a0000000043">
+<p>
+it doesn’t matter whether the ‘sums’ are right or wrong; 
+</p>
+</li>
+<li id="a0000000044">
+<p>
+the work is worthless. 
+</p>
+</li>
+</ul>
+<section class="subsubsection">
+<h4 id="a0000000045">Some basics</h4>
+<ul class="itemize" id="a0000000046">
+<li id="a0000000047">
+<p>
+Put your name on everything you hand in. 
+</p>
+</li>
+<li id="a0000000048">
+<p>
+Show the title of the work clearly. 
+</p>
+</li>
+<li id="a0000000049">
+<p>
+Write from left to right, and top to bottom, like a book. Don’t introduce columns. Don’t right one bit further up the page than something which precedes it. 
+</p>
+</li>
+<li id="a0000000050">
+<p>
+Give yourself plenty of space. 
+</p>
+</li>
+<li id="a0000000051">
+<p>
+Write on one side of the paper only. 
+</p>
+</li>
+<li id="a0000000052">
+<p>
+Watch out for symbols, letters and numbers which can be confused. 
+</p>
+</li>
+</ul>
+</section><section class="subsection">
+<h3 id="a0000000053">1.2.1 Some specifics</h3>
+<dl class="description">
+<dt>Fractions</dt>
+<dd> <ul class="itemize" id="a0000000054">
+<li id="a0000000055">
+<p>
+Horizontal lines: <script type="math/tex">\frac{1}{2} x</script> not <script type="math/tex">1/2x</script>
+</p>
+</li>
+<li id="a0000000056">
+<p>
+Be very careful where you put the <script type="math/tex">x</script>. 
+</p>
+</li>
+<li id="a0000000057">
+<p>
+Fractions of fractions are rarely a good idea. Simplify 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\frac{2}{\frac{x}{2}} = \frac{2\times 2}{\frac{x}{2}}\times 2 = \frac{4}{x}</script></span>
+</li>
+<li id="a0000000058">
+<p>
+Always reduce fractions: <script type="math/tex">\frac{1}{2}</script> not <script type="math/tex">\frac{2}{4}</script>. 
+</p>
+</li>
+</ul>
+</dd>
+<dt>Simplifying</dt>
+<dd><p>
+Not always clear which is simpler, but try to simplify. Certainly… 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">3x+6+4x+10=7x+16</script></span>
+<span class="dmath"><script type="math/tex; mode=display">\frac{x^2}{x^{-1}} =x^3.</script></span>
+</dd>
+<dt>Numbers and letters</dt>
+<dd><p>
+Numbers before letters in final answer 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2x \quad \text{not}\quad x.2 \text{ or } x2.</script></span>
+</dd>
+<dt>Functions</dt>
+<dd> <ol class="enumerate" id="a0000000059">
+<li id="a0000000060" value="1">
+<p>
+<script type="math/tex">\sin x +1</script> means <script type="math/tex">(\sin x )+1</script> (but easily misread) 
+</p>
+<ol class="enumerate" id="a0000000061">
+<li id="a0000000062" value="1">
+<p>
+if we want <script type="math/tex">\sin (x+1)</script> you must include the brackets; 
+</p>
+</li>
+<li id="a0000000063" value="2">
+<p>
+if we want <script type="math/tex">(\sin x)+1</script>, write the 1 first: <script type="math/tex">1+\sin x</script>. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000064" value="2">
+<p>
+Normally we need brackets, but by convention, <script type="math/tex">\sin 2x</script> is usually taken to mean <script type="math/tex">\sin (2x)</script> (but note, computers don’t know this, so you always need the brackets when using computers) 
+</p>
+</li>
+<li id="a0000000065" value="3">
+<p>
+Usual order for things multiplied together: 
+</p>
+<div class="centered"> number <script type="math/tex">\times </script> algebraic <script type="math/tex">\times </script> other functions </div>
+<p>
+eg <script type="math/tex"> 3(x+2)\cos x</script> not <script type="math/tex">3\cos x(x+2)</script>
+</p>
+<p>
+eg <script type="math/tex">xe^3x</script> not <script type="math/tex">e^3x x</script>
+</p>
+<p>
+Why? Because we’re less likely to misread it. 
+</p>
+</li>
+</ol>
+</dd>
+<dt>Multiplication dots</dt>
+<dd><p>
+Using a dot for multiplication is handy sometimes, but it’s also potentially a problem. 
+</p>
+<p>
+<script type="math/tex">5!= 5.4.3.2.1</script> is reasonably clear <script type="math/tex">2! = 2.1</script> is not so clear. Do we mean <script type="math/tex">2!=21/10</script> or <script type="math/tex">2!=2\times 1</script>? 
+</p>
+<p>
+Multiplication dots are especially problematic which the second thing is negated. Writing <script type="math/tex">2\times (-x)</script> as <script type="math/tex">2.-x</script> looks far too much like <script type="math/tex">2-x</script>. 
+</p>
+<p>
+Change the order, or use brackets, eg <script type="math/tex">2(-x)= -2x</script>
+</p>
+</dd>
+<dt>And while we’re talking about minus signs</dt>
+<dd><p>
+You can never turn a plus back into a minus by adding more ink. 
+</p>
+</dd>
+</dl>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 1. </b> <span class="rmfamily"><p>
+<div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<p>
+Write these in the most sensible way: 
+</p>
+<ol class="enumerate" id="a0000000066">
+<li id="a0000000067" value="1">
+<p>
+The cosine of one-half of <script type="math/tex">\beta </script>, all multiplied by <script type="math/tex">2x</script> plus 1 
+</p>
+</li>
+<li id="a0000000068" value="2">
+<p>
+The cosine of <script type="math/tex">\Gamma </script>, over 5, multiplied by <script type="math/tex">2x</script>, plus 1 
+</p>
+</li>
+<li id="a0000000069" value="3">
+<p>
+The cosine of <script type="math/tex">\phi </script>, over 5, multiplied by <script type="math/tex">2x</script> plus 1 
+</p>
+</li>
+<li id="a0000000070" value="4">
+<p>
+The square root of <script type="math/tex">x + 1</script>, times <script type="math/tex">x</script> squared times <script type="math/tex">x</script> cubed times 6 over 3 
+</p>
+</li>
+<li id="a0000000071" value="5">
+<p>
+<script type="math/tex">x</script> squared times 6 times 4 times –1 divided by 4 
+</p>
+</li>
+<li id="a0000000072" value="6">
+<p>
+<script type="math/tex">\ln (4x).5.e^x.x</script>
+</p>
+</li>
+</ol>
+</div>
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000073">1.3 Solving equations and transposing formulae</h2>
+<p>
+ What different operations can you perform when solving an equation or transposing a formula? 
+</p>
+<div class="centered"> <table class="tabular">
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black">
+<p>
+Things that <b class="bfseries">don’t</b> change the value 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"><p>
+ Things that <b class="bfseries">do</b> change the value
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black">
+<p>
+gathering like-terms 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"><p>
+multiplying
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+expanding brackets 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+ adding
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+factorising 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+dividing (but not by zero or something that might be zero) 
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+simplifying 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+ squaring 
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"> </td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+ square-rooting
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"> </td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+taking the log
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"> </td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+integrating
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-left:1px solid black"> </td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+differentiating
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+Can be performed on an expression, ie on one side of the equation only 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+ Can only be performed on an equation, and you must do exactly the same to both sides of the equation
+</p>
+</td>
+</tr>
+</table> </div>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 2. </b> <span class="rmfamily"><p>
+<b class="bfseries">Transposition &amp; identifying the mathematical operations we use</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000074">
+<li id="a0000000075" value="1">
+<ol class="enumerate" id="a0000000076">
+<li id="a0000000077" value="1">
+<p>
+Rearrange <script type="math/tex">i=\frac{2}{3+v}-5a</script> to make <script type="math/tex">v</script> the subject. 
+</p>
+</li>
+<li id="a0000000078" value="2">
+<p>
+Identify every operation which you have performed to find your answer 
+</p>
+</li>
+<li id="a0000000079" value="3">
+<p>
+Now try the question again, but do it in a different way. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000080" value="2">
+<p>
+Solve this equation <script type="math/tex">\frac{x-1}{3}-\frac{3}{x}=\frac{x+5}{6}.</script> Again, identify every operation which you have performed. 
+</p>
+</li>
+</ol>
+</div>
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 3. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000081">
+<li id="a0000000082" value="1">
+<p>
+Write these expressions in a sensible, concise, unmistakeable way. 
+</p>
+<ol class="enumerate" id="a0000000083">
+<li id="a0000000084" value="1">
+<p>
+<script type="math/tex">\cos (2x)\times (-5)\times x^2</script>
+</p>
+</li>
+<li id="a0000000085" value="2">
+<p>
+natural log of <script type="math/tex">(2+x)</script>, multiplied by 3 
+</p>
+</li>
+<li id="a0000000086" value="3">
+<p>
+2 divided by <script type="math/tex">x+1</script>
+</p>
+</li>
+<li id="a0000000087" value="4">
+<p>
+<script type="math/tex">x+4</script>, divided by 2 
+</p>
+</li>
+<li id="a0000000088" value="5">
+<p>
+2, divided by <script type="math/tex">x+4</script>. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000089" value="2">
+<p>
+Find the solution (or solutions) to the following equations. Be neat, clear, tidy. Summarise your result. Watch out for the letters and numbers which can easily be confused.     <ol class="enumerate" id="a0000000090">
+<li id="a0000000091" value="1">
+<p>
+<script type="math/tex">\dfrac {3k-1}{2} = 4</script>
+</p>
+</li>
+<li id="a0000000092" value="2">
+<p>
+<script type="math/tex">2s + 5 = 3s + 1</script>
+</p>
+</li>
+<li id="a0000000093" value="3">
+<p>
+<script type="math/tex">\dfrac {8u^3 - 3}{3} =8</script>
+</p>
+</li>
+<li id="a0000000094" value="4">
+<p>
+<script type="math/tex">\dfrac {3z}{2}-z=\dfrac {1}{z}</script>
+</p>
+</li>
+</ol>
+  Check your answers by substituting the final value back into the equation. 
+</p>
+</li>
+<li id="a0000000095" value="3">
+<p>
+For each of the following, make the letter in square brackets the subject. Be neat, clear, tidy. Summarise your result. Watch out for the letters and numbers which can easily be confused.     <ol class="enumerate" id="a0000000096">
+<li id="a0000000097" value="1">
+<p>
+<script type="math/tex"> \sqrt{\frac{a}{\alpha } -c} = e</script> [<script type="math/tex">\alpha </script> (not <script type="math/tex">a</script> )] 
+</p>
+</li>
+<li id="a0000000098" value="2">
+<p>
+<script type="math/tex">\sqrt{(\rho ^2+P)}= 2\rho </script> [<script type="math/tex">\rho </script> (not P)] 
+</p>
+</li>
+<li id="a0000000099" value="3">
+<p>
+<script type="math/tex">M(a\gamma + by+c) =0</script> [y(not <script type="math/tex">\gamma </script>)] 
+</p>
+</li>
+<li id="a0000000100" value="4">
+<p>
+<script type="math/tex">\frac{S}{X-x} = s</script>, [<script type="math/tex">x</script>] 
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000101" value="4">
+<p>
+Solve     <ol class="enumerate" id="a0000000102">
+<li id="a0000000103" value="1">
+<p>
+<script type="math/tex">x^2=3</script>
+</p>
+</li>
+<li id="a0000000104" value="2">
+<p>
+<script type="math/tex">x(x+4)=0</script>
+</p>
+</li>
+<li id="a0000000105" value="3">
+<p>
+<script type="math/tex">(x^2+9)(x^2-4)=0 </script>
+</p>
+</li>
+</ol>
+  Make sure you find all the possible answers. 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.1.0, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-05</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>

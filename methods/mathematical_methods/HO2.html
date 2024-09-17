@@ -1,0 +1,1380 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Angharad Ugonna" />
+            <meta name="date" content="2024-09-09" />
+        
+
+        <title>2 Introduction to Complex Numbers | Mathematical and Statistical Methods</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1725899447.669278">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725899447.669278">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1725899447.669278">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1725899447.669278', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1725899447.669278"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1725899447.669278"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1725899447.669278"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1725899447.669278" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1725899447.669278">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" alt="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" alt="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725899447.669278">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" alt="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Mathematical and Statistical Methods</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="index.html">Mathematical Methods - Calculus</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                2 Introduction to Complex Numbers
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="HO1.html">Previous: 1 Functions</a>
+            
+            
+            <a rel="next" href="HO3.html">Next: 3 Complex Numbers: Polar and Cartesian Coordinates</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a href="pdf/introduction_to_comp.pdf"download><svg class="icon" alt="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#HO2">2 Introduction to Complex Numbers</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000114">Note</a>
+        
+    </li>
+
+    <li>
+        <a href="#ex_quad2">Note</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000122">2.1 Complex Arithmetic</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000123">2.1.1 The Complex Conjugate</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000124">2.1.2 Complex Number Arithmetic: Addition, Subtraction and Multiplication</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000125">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000131">2.1.3 Complex Number Arithmetic: Division</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000132">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000148">2.1.4 Every Quadratic Factorises</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000152">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000158">2.2 Graphical Representation of Complex Numbers</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <!-- Latex Chapter/Part -->
+<h1 id="HO2">2 Introduction to Complex Numbers</h1>
+<p>
+ Over the millennia of our existence our understanding of the world and with it mathematics has improved. This is demonstrated with our understanding and classification of numbers. We started with the counting numbers - whole positive numbers, called Natural numbers that has the special symbol <script type="math/tex">\mathbb {N}</script>. We define natural numbers as the set of all positive integers: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\mathbb {N} = \{ 1,2,3,4,...\} .</script></span>
+<p>
+ These numbers, by themselves enable us to count how many things we have but do not allow loss. Ie we cannot always find solutions to equations of the form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x+n = m \qquad (m,n\in \mathbb {N}).</script></span>
+<p>
+ To counter this we add negative whole numbers and zero of give us the set of integers: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\mathbb {Z} = \{  ...-3,-2,-1,0,1,2,3,...\} ,</script></span>
+<p>
+ and so <script type="math/tex">x=m-n</script> has a solution even if <script type="math/tex">n>m</script>. The concept of negative numbers and zero came later than some of the number systems below. 
+</p>
+<p>
+Dividing goods between people probably led to the invention of rational numbers where some equations of the form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">nx=m, \qquad (m,n\in \mathbb {Z}, n \neq 0)</script></span>
+<p>
+ cannot be solved in the integers. Thus 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\mathbb {Q} = \left\{ \frac{M}{n}:m,n \in \mathbb {Z}, n\neq 0\right\} .</script></span>
+<p>
+Now every linear equation of the form <script type="math/tex">ax = b, (a,b\in \mathbb {Q}, a\neq 0)</script> has a solution <script type="math/tex">x = \frac{a}{b}</script> where <script type="math/tex">\frac{a}{b}\in \mathbb {Q}</script>. However there is no solution to 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x^2=2</script></span>
+<p>
+ in <script type="math/tex">\mathbb {Q}</script>, so another extension is added to include numbers that cannot be represented as whole numbers or quotients. These are the real numbers, denoted <script type="math/tex">\mathbb {R}</script>. Real numbers include all the numbers along the number line including <script type="math/tex">\rm {e}, \sqrt{2}</script> and <script type="math/tex">\pi </script>. However, we still do not have a number system that allows for the square root of a negative number. For example, how do we solve an equation of the form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x^2 = -1?</script></span>
+<p>
+ To include solutions to such an equation we introduce the concept of a complex number. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 4. </b> <span class="rmfamily"><b class="bfseries">Imaginary Unit</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     We define the imaginary unit to be <span class="dmath"><script type="math/tex; mode=display">i= \sqrt{-1}\quad \Longleftrightarrow \quad i^2 = -1.</script></span>
+</div> </span>
+</p>
+</p>
+<h4 id="a0000000114">Note</h4>
+<p>
+ In some text books, especially physics or engineering ones, <script type="math/tex">j</script> is used to denote the imaginary unit. <span class="vspace medskip"></span>
+</p>
+<p>
+The imaginary unit <script type="math/tex">i</script> multiplied by a real number (other than zero), is called an <b class="bfseries">imaginary number</b>. 
+</p>
+<p>
+We can deduce the square root of other negative numbers, by considering what happens when we square an imaginary number. 
+</p>
+<span><script type="math/tex; mode=display">\begin{eqnarray*}  (2i)^2 &  =& 2\times 2\times \times i\times i\\ &  = & 4i^2\\ &  = & 4(-1)\\ \Rightarrow & & (2i)^2 = -4\\ \text{Hence} \qquad & & \sqrt{-4}=2i. \end{eqnarray*}</script></span>
+<p>
+In general, we can say that if <script type="math/tex">\beta >0</script>, then 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\sqrt{-\beta }=isqrt{\beta }</script></span>
+<p>
+You know, of course, that <script type="math/tex">(-2)^2=(2)^2=4</script>. The same idea works with imaginary numbers 
+</p>
+<span><script type="math/tex; mode=display">\begin{eqnarray*}  (-i)^2 & =&  (-1)\times i\times (-1)\times i\\ & =&  (-1)^2 i^2\\ & =&  1i^2\\ & =&  -1=i^2\\ (-2i)^2=(-2)\times (-2)\times i \times i & =&  4i^2=4(-1)=-4 \end{eqnarray*}</script></span>
+<p>
+The square root sign always means “the positive (or principal) square root of”. If we want both the positive and negative one, we need to include <script type="math/tex">\pm </script> . 
+</p>
+<p>
+To solve <script type="math/tex">x^2=4</script> we say <script type="math/tex">x= \pm \sqrt{4}=\pm 2</script>. 
+</p>
+<p>
+To solve <script type="math/tex">x^2=-4</script> we say <script type="math/tex">x= \pm \sqrt{-4} = \pm 2i</script>. 
+</p>
+<p>
+When we add or subtract a (non-zero) real number with a (non-zero) imaginary number, we get something which is neither real nor imaginary. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 5. </b> <span class="rmfamily"><p>
+<b class="bfseries">Complex Number</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     A <b class="bfseries">complex number</b> is an expression of the form <span class="dmath"><script type="math/tex; mode=display">a + ib \qquad \text{or} \qquad a+bi</script></span> where <script type="math/tex">a</script> and <script type="math/tex">b</script> are real numbers, and <script type="math/tex">i</script> is the imaginary unit. 
+</div>
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+ The “complex” part of complex number refers to the the number being made up of different components. Examples of complex numbers include: <p>
+<script type="math/tex">3+2i</script>
+</p>
+<p>
+<script type="math/tex">4-i</script>
+</p>
+<p>
+<script type="math/tex">\frac{7}{3} + \frac{2}{3}i</script>
+</p>
+<p>
+<script type="math/tex">0+i\pi = i\pi </script>
+</p>
+<p>
+<script type="math/tex">-3 +0i =-3</script>
+</p>
+</p>
+<p>
+It is often convenient to represent a complex number by a single letter; <script type="math/tex">w</script> or <script type="math/tex">z</script> are frequently used. If <script type="math/tex">a,b,x</script> and <script type="math/tex">y</script> are all real numbers, and 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">w = a + bi \qquad \text{ and } \qquad z = x+yi</script></span>
+<p>
+ then we can refer to the complex numbers, <script type="math/tex">w</script> and <script type="math/tex">z</script>. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 6. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     If <script type="math/tex">z= x+yi</script> is a complex number, where <script type="math/tex">x</script> and <script type="math/tex">y</script> are real, then     <ul class="itemize" id="a0000000115">
+<li id="a0000000116">
+<p>
+<script type="math/tex">x</script> is the real part of <script type="math/tex">z</script>, denoted <script type="math/tex">Re(z)</script>. 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">Re(z)=Re(x+yi) = x</script></span>
+</li>
+<li id="a0000000117">
+<p>
+<script type="math/tex">y</script> is the imaginary part of <script type="math/tex">z</script>, donoted <script type="math/tex">Im(z)</script>. 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">Im(z)=Im(x+yi) = y</script></span>
+</li>
+</ul>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 6. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<dl class="description">
+<dt>The real part</dt>
+<dd><p>
+<script type="math/tex">Re(3+2i)=3</script>
+</p>
+</dd>
+<dt>The imaginary part</dt>
+<dd><p>
+<script type="math/tex">Im(3+2i)=2, Im(4-i)=-1</script>
+</p>
+</dd>
+</dl>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<h4 id="ex_quad2">Note</h4>
+<p>
+ that the imaginary part is, by convention, the coefficient of the imaginary unit <script type="math/tex">i</script>, and does not include the <script type="math/tex">i</script> itself. 
+</p>
+<p>
+A complex number with a zero imaginary part is a real number (real numbers are a subset of complex numbers). For example, <script type="math/tex">3+0i=3\in \mathbb {R}</script>. 
+</p>
+<p>
+A complex number with a zero real part is an imaginary number (imaginary numbers are a subset of complex numbers). For example, <script type="math/tex">0+4i=4i</script>. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 7. </b> <span class="rmfamily"> <div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+ Solve the equation 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">4x^2-8x+13=0</script></span>
+<p>
+<b class="bfseries">Solution</b> Using the quadratic formula with <script type="math/tex">a=4,b= -8,c=13</script> we can say 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=\frac{-(-8)\pm \sqrt{(-8)^2-4(4)(13)}}{2(4)} = \frac{8\pm \sqrt{-144}}{8}.</script></span>
+<p>
+Now 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\sqrt{-144}=\sqrt{-1}\sqrt{144} = 12i</script></span>
+<p>
+ So, roots of the equation are 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=1\pm \frac{3}{2}i.</script></span>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<b class="bfseries">Keypoint </b> A quadratic equation where the discriminant is negative has no real roots but it does have two complex roots. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 3. </b> <span class="rmfamily"> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Solve the equations     <ol class="enumerate" id="a0000000118">
+<li id="a0000000119" value="1">
+<p>
+<script type="math/tex">x^2+2x+5=0</script>
+</p>
+</li>
+<li id="a0000000120" value="2">
+<p>
+<script type="math/tex"> 2x^2-12x+24=0</script>
+</p>
+</li>
+<li id="a0000000121" value="3">
+<p>
+<script type="math/tex">-4x^2+16x-17=0.</script>
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<section class="section">
+<h2 id="a0000000122">2.1 Complex Arithmetic</h2>
+<section class="subsection">
+<h3 id="a0000000123">2.1.1 The Complex Conjugate</h3>
+<p>
+ We define the complex conjugate, or conjugate of a complex number, as follows: 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 7. </b> <span class="rmfamily"><b class="bfseries">Complex conjugate</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<p>
+ If <script type="math/tex">z=a+bi</script> then its conjugate is <script type="math/tex">a-bi</script> (ie change the sign of the imaginary part). 
+</p>
+<p>
+We denote the conjugate as <script type="math/tex"> \bar{z}</script> or <script type="math/tex">z^*</script>. 
+</p>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 8. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     If <script type="math/tex">z=3-4i</script> then <script type="math/tex">\bar{z}=z^*=3+4i</script>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+Notice that conjugates come in pairs. In the example here <script type="math/tex">(3+4i)^*=3-4i=z</script>. 
+</p>
+<p>
+In our quadratic example, example   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2">None</a>
+, our roots were a complex conjugate pair, ie conjugates of each other: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=1+\frac{3}{2} i \qquad \text{ and } \qquad \bar{x}=1-\frac{3}{2}i.</script></span>
+<p>
+ When we get complex roots of a polynomial, they always occur in conjugate pairs like this. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000124">2.1.2 Complex Number Arithmetic: Addition, Subtraction and Multiplication</h3>
+<p>
+ Addition, subtraction, and multiplication of complex numbers works exactly as you would expect, using your existing rules of arithmetic and algebra. The key principle is that we add the real and imaginary parts separately - gathering like terms. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 9. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Suppose we have two complex numbers: <span class="dmath"><script type="math/tex; mode=display">z=2-5i \qquad \text{ and } \qquad w=4+6i</script></span> then <dl class="description">
+<dt>Addition</dt>
+<dd><span class="dmath"><script type="math/tex; mode=display">z+w = (2+4) + (-5+6)i = 6+i</script></span>
+</dd>
+<dt>Subtraction</dt>
+<dd><span class="dmath"><script type="math/tex; mode=display">z-w = (2-4) + (-5-6)i = -2-11i</script></span>
+</dd>
+<dt>Multiplication</dt>
+<dd><span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} zw & =&  (2-5i)(4+6i) \\ & =&  2\times 4 + 2\times 6 + (-5i)\times 4 +(-5i)\times 6i\\ & =&  8 +12i - 20i +(-30)\times (i\times i)\\ & =&  8 - 8i + (-30)\times (-1) \\ & =&  8 -8i +30\\ & =&  38 - 8i. \end{array}</script></span>
+</dd>
+</dl>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<h4 id="a0000000125">Note</h4>
+<p>
+ In the case of both addition and subtraction, the key thing is: 
+</p>
+<ul class="itemize" id="a0000000126">
+<li id="a0000000127">
+<p>
+add/subtract the real parts, to get the new real part; 
+</p>
+</li>
+<li id="a0000000128">
+<p>
+add/subtract the imaginary parts, to get the new imaginary part. 
+</p>
+</li>
+</ul>
+<p>
+ and multiplication is the only arithmetic so far which is any different from algebra we’ve met before. With multiplication, 
+</p>
+<ul class="itemize" id="a0000000129">
+<li id="a0000000130">
+<p>
+we always get an <script type="math/tex">i^2</script>, which we can simplify using <script type="math/tex">i^2=-1</script>. 
+</p>
+</li>
+</ul>
+</section><section class="subsection">
+<h3 id="a0000000131">2.1.3 Complex Number Arithmetic: Division</h3>
+<p>
+ Division by a complex number requires a cunning trick. In order to make progress evaluating a complex quotient, <script type="math/tex">\frac{z}{w}</script>, say, we first multiply top and bottom of the fraction by the complex conjugate of the numerator (bottom). 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\frac{z}{w} = \frac{z\bar{w}}{w\bar{w}}</script></span>
+<p>
+It turns out that a complex number multiplied by its conjugate is always real (proof later), <script type="math/tex">w\bar{w}\in \mathbb {R}</script>, and we know how to divide by a real number. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 10. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Find <script type="math/tex">\frac{z}{w}</script> where <span class="dmath"><script type="math/tex; mode=display">z=2-5i \qquad \text{ and } \qquad w=4+6i.</script></span>
+</div></span>
+</p>
+</p>
+<h4 id="a0000000132">Solution</h4>
+<p>
+ To calculate <script type="math/tex">\frac{z}{w}</script> we multiply top and bottom by the complex conjugate of the denominator so 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\frac{z}{w}= \frac{z\bar{w}}{w\bar{w}}.</script></span>
+<p>
+ So 
+</p>
+<ul class="itemize" id="a0000000133">
+<li id="a0000000134">
+<p>
+First we find the complex conjugate of the denominator <script type="math/tex">\bar{w}</script>: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\bar{w} = 4-6i</script></span>
+</li>
+<li id="a0000000135">
+<p>
+Calculate <script type="math/tex">w\bar{w}</script>: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} w\bar{w} & =&  (4+6i)(4-6i) \\ & =&  4\times 4 + 4 \times (-6i) +4\times 6i +(-6i)\times 6i\\ & =&  16 + 36\\ & =&  52. \end{array}</script></span>
+</li>
+<li id="a0000000136">
+<p>
+Calculate <script type="math/tex">z\bar{w}</script>: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} z\bar{w} & =&  (2-5i)(4-6i) \\ & =&  2\times 4 + 2 \times (-6i) +4\times (-5i) +(-5i)\times (-6i)\\ & =&  8 - 12i-20i+30i^2\\ & =&  -22 -32i. \end{array}</script></span>
+</li>
+<li id="a0000000137">
+<p>
+Calculate <script type="math/tex">\frac{z\bar{w}}{w\bar{w}}</script>
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} \frac{z\bar{w}}{w\bar{w}} & =&  \frac{-22 -32i}{52}\\ & =&  \frac{-22}{52}+\frac{-32i}{52}\\ & =&  -\frac{11}{26}-\frac{8}{13}i\\ \end{array}</script></span>
+</li>
+</ul>
+<p>
+<span class="vspace medskip"></span>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 4. </b> <span class="rmfamily"><p>
+<div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000138">
+<li id="a0000000139" value="1">
+<p>
+Go back to Exercise   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2">None</a>
+ and check your answers by substituting them into the quadratic expression and checking that it simplifies to zero. 
+</p>
+</li>
+<li id="a0000000140" value="2">
+<p>
+Given 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">z_1 = 4+2i, \quad z_2 = 2-3i, \quad z_3 = 2-i,</script></span>
+<p>
+ find:     <ol class="enumerate" id="a0000000141">
+<li id="a0000000142" value="1">
+<p>
+<script type="math/tex">z_1+z_2</script>
+</p>
+</li>
+<li id="a0000000143" value="2">
+<p>
+<script type="math/tex">z_1-z_2</script>
+</p>
+</li>
+<li id="a0000000144" value="3">
+<p>
+<script type="math/tex">Im(z_2-2z_3)</script>
+</p>
+</li>
+<li id="a0000000145" value="4">
+<p>
+<script type="math/tex">z_1 z_2</script>
+</p>
+</li>
+<li id="a0000000146" value="5">
+<p>
+<script type="math/tex">\bar{z_2}.\bar{z_3}</script>
+</p>
+</li>
+<li id="a0000000147" value="6">
+<p>
+<script type="math/tex">\frac{z_1}{z_2}</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+</ol>
+</div>
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000148">2.1.4 Every Quadratic Factorises</h3>
+<p>
+ You may have been told previously that only some quadratic will factorise. This is not true. Every quadratic will factorise, but only some can be factorised ‘by inspection’. For others, we need to find the roots first. 
+</p>
+<p>
+Suppose we think about a quadratic equation, containing a quadratic which does factorise easily, (in fact, we did earlier today) 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2x^2+7x-4=0.</script></span>
+<p>
+Factorising gives us 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">(2x-1)(x+4)=0</script></span>
+<p>
+We could go one stage further, and take the 2 out of the first bracket so that the coefficients of the <script type="math/tex">x</script>’s are both 1: 
+</p>
+<div class="eqn" id="eq_quad1">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_quad1} 2\left(x-\frac{1}{2}\right)(x+4)=0\tag{2.1}\end{equation}</script>
+</div>
+<p>
+Now we know that to solve this, we say 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x-\frac{1}{2} =0 \qquad \text{ or } \qquad x+4=0</script></span>
+<p>
+ which means that the roots are 
+</p>
+<div class="eqn" id="eq_quadsol1">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_quadsol1} x=\frac{1}{2} \quad \text{ and } \quad x=-4.\tag{2.2}\end{equation}</script>
+</div>
+<p>
+Comparing equations (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad1">2.1</a>
+) and (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quadsol1">2.2</a>
+), we can see that the roots appear in the factors we had in equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad1">2.1</a>
+) (with the opposite sign). 
+</p>
+<p>
+<b class="bfseries">This is always the case. </b> We can always write a quadratic as follows: 
+</p>
+<div class="eqn" id="eq_quad2">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_quad2} ax^2+bx+c=a(x-\beta )(x-\gamma )\tag{2.3}\end{equation}</script>
+</div>
+<p>
+ where the roots are <script type="math/tex">+\beta </script> and <script type="math/tex">+\gamma </script>. Notice though that the a must be outside the factors. 
+</p>
+<p>
+So, if we cannot factorise a quadratic by inspection, we can instead: 
+</p>
+<ol class="enumerate" id="a0000000149">
+<li id="a0000000150" value="1">
+<p>
+Find the roots of the quadratic by our preferred method; 
+</p>
+</li>
+<li id="a0000000151" value="2">
+<p>
+Substitute the roots (and the coefficient of <script type="math/tex">x</script>) into equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad2">2.3</a>
+). 
+</p>
+</li>
+</ol>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 11. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+ Factorise the quadratic <script type="math/tex">4x^2-8x+13</script>. 
+</p>
+</div></span>
+</p>
+</p>
+<h4 id="a0000000152">Solution</h4>
+<p>
+ We cannot factorise this easily, but we found the roots in an earlier example. They are 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=1+\frac{3}{2} i \quad \text{ and } \quad x=1-\frac{3}{2} i.</script></span>
+<p>
+Substituting these for <script type="math/tex">\beta </script> and <script type="math/tex">\gamma </script>, and <script type="math/tex">a=4</script> (coefficient of the <script type="math/tex">x^2</script>) into equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad2">2.3</a>
+) gives us 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">4x^2-8x+13=4\left(x-\left(1+\frac{3}{2} i\right)\right)\left(x-\left(1-\frac{3}{2} i\right)\right).</script></span>
+<p>
+ Multiplying out the inner sets of brackets gives us 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">4x^2-8x+13=4\left(x-1-\frac{3}{2} i\right)\left(x-1+\frac{3}{2} i\right).</script></span>
+<p>
+ When we get rid of fractions, it’s good to do so. Here we can say 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">4x^2-8x+13=2.\left(x-1-\frac{3}{2} i\right).2.\left(x-1+\frac{3}{2}i\right). =(2x-2-3i)(2x-2+3i).</script></span>
+<p>
+<span class="vspace medskip"></span>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 5. </b> <span class="rmfamily"><b class="bfseries">Factorising quadratics</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<p>
+ Factorise each of the following quadratic expressions into two linear factors. (Note that you already found the roots in earlier questions)     <ol class="enumerate" id="a0000000153">
+<li id="a0000000154" value="1">
+<p>
+<script type="math/tex">2x^2-20x+44</script>
+</p>
+</li>
+<li id="a0000000155" value="2">
+<p>
+<script type="math/tex">x^2+2x+5</script>
+</p>
+</li>
+<li id="a0000000156" value="3">
+<p>
+<script type="math/tex">2x^2-12x+24</script>
+</p>
+</li>
+<li id="a0000000157" value="4">
+<p>
+<script type="math/tex">-4x^2+16x-17</script>
+</p>
+</li>
+</ol>
+</p>
+<p>
+<b class="bfseries">Check your answers</b> by carefully expanding the brackets and confirming that you get the original expression. 
+</p>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000158">2.2 Graphical Representation of Complex Numbers</h2>
+<p>
+ When you were young, you probably met the concept of a number line for real numbers: 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000159">
+<img alt="\begin{tikzpicture} 
+	\draw[latex-,color=blue] (-6.5,0) -- (6.5,0) ;
+	\draw[-latex, color=blue] (-6.5,0) -- (6.5,0) ;
+	\foreach \x in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+	\draw[shift={(\x,0)},color=blue] (0pt,3pt) -- (0pt,-3pt);
+	\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+	\draw[shift={(\x,0)},color=blue] (0pt,0pt) -- (0pt,-3pt) node[below] 
+	{$\x$};
+%	\draw[*-o] (0.92,0) -- (2.08,0);
+%	\draw[very thick    ] (0.92,0) -- (1.92,0);
+	
+\end{tikzpicture}" src="images/img-0012.svg"/>
+</div> </div>
+<p>
+We could have another number line for imaginary numbers: 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000160">
+<img alt="\begin{tikzpicture} 
+		\draw[latex-,color=red] (-6.5,0) -- (6.5,0) ;
+		\draw[-latex, color=red] (-6.5,0) -- (6.5,0) ;
+		\foreach \x in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+		\draw[shift={(\x,0)},color=red] (0pt,3pt) -- (0pt,-3pt);
+		\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+		\draw[shift={(\x,0)},color=red] (0pt,0pt) -- (0pt,-3pt) node[below] 
+		{$\x i$};
+		%	\draw[*-o] (0.92,0) -- (2.08,0);
+		%	\draw[very thick    ] (0.92,0) -- (1.92,0);
+		
+	\end{tikzpicture}" src="images/img-0013.svg"/>
+</div> </div>
+<p>
+ However, we know that zero multiplied by anything is zero, so 0i=0. This means our real number line must intersect at 0. The easiest way of doing this is to imagine rotating the imaginary number line through 90 degrees, which gives us something like a pair of axes: 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000161">
+<img alt="\begin{tikzpicture} 
+		\draw[latex-,color=blue] (-6.5,0) -- (6.5,0) ;
+		\draw[-latex, color=blue] (-6.5,0) -- (6.5,0) ;
+		\foreach \x in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+		\draw[shift={(\x,0)},color=blue] (0pt,3pt) -- (0pt,-3pt);
+		\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+		\draw[shift={(\x,0)},color=blue] (0pt,0pt) -- (0pt,-3pt) node[below] 
+		{$\x$};
+	\draw[latex-,color=red] (0,-6.5) -- (0,6.5) ;
+	\draw[-latex, color=red] (0,-6.5) -- (0,6.5) ;
+	\foreach \y in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+	\draw[shift={(0,\y)},color=red] (3pt,0pt) -- (-3pt,0pt);
+	\foreach \y in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+	\draw[shift={(0,\y)},color=red] (0pt,0pt) -- (3pt,0pt) node[right] 
+	{$\y i$};
+\draw[fill=black] (1,1) circle(2.5pt) node[above,right](P) {$1+i$};
+	\draw[help lines, color=gray!30, dashed] (-6,-6) grid (6,6);
+	\end{tikzpicture}" src="images/img-0014.svg"/>
+</div> </div>
+<p>
+Now, as well as the two axes representing real and imaginary numbers, we can represent a complex number as a point somewhere else on the plane. 
+</p>
+<p>
+This plane is known as the <b class="bfseries">Complex Plane</b>. 
+</p>
+<p>
+A picture of the complex plane is known as an <b class="bfseries">Argand diagram</b>. 
+</p>
+<p>
+Every complex number lies somewhere on this plane, and every point on the plane represents a complex number. 
+</p>
+<p>
+One way of thinking about complex numbers is that they are 2-dimensional numbers, which can describe points anywhere on a flat plane, whereas real numbers which are 1-dimensional and can describe a point along a line. Notice the similarities with the co-ordinate system you’re used to. A point <script type="math/tex">(x,y)</script> on Cartesian axes is similar to a complex number <script type="math/tex">x+yi</script>. 
+</p>
+<p>
+This similarity can be exploited in various applications of complex numbers; however, that thinking only gets you so far, and it’s important to realise that co-ordinates and complex numbers are not simply interchangeable things. We can represent addition and subtraction of complex numbers on an Argand diagram, as you can represent addition/subtraction on real numbers on a number line. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 6. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Given <script type="math/tex">z=3+2i</script> and <script type="math/tex">w=4-3i</script>,     <ol class="enumerate" id="a0000000162">
+<li id="a0000000163" value="1">
+<p>
+Mark <script type="math/tex">z</script> and <script type="math/tex">w</script> on the complex plane below. 
+</p>
+</li>
+<li id="a0000000164" value="2">
+<p>
+Mark <script type="math/tex">w-z</script> on the complex plane. 
+</p>
+</li>
+<li id="a0000000165" value="3">
+<p>
+Mark <script type="math/tex">z^*</script> and <script type="math/tex">w^*</script> on the complex plane. What do you notice about the relationship between a complex number and its conjugate? 
+</p>
+</li>
+</ol>
+<div class="centered"> <div class="tikzcd" id="a0000000166">
+<img alt="\begin{tikzpicture} [scale=0.75]
+				\draw[latex-,color=blue] (-1.5,0) -- (8.5,0) ;
+				\draw[-latex, color=blue] (-1.5,0) -- (8.5,0) ;
+				\foreach \x in  {-1,0,1,2,3,4,5,6,7,8}
+				\draw[shift={(\x,0)},color=blue] (0pt,3pt) -- (0pt,-3pt);
+				\foreach \x in {-1,0,1,2,3,4,5,6,7,8}
+				\draw[shift={(\x,0)},color=blue] (0pt,0pt) -- (0pt,-3pt) node[below] 
+				{$\x$};
+				\draw[latex-,color=red] (0,-5.5) -- (0,5.5) ;
+				\draw[-latex, color=red] (0,-5.5) -- (0,5.5) ;
+				\foreach \y in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+				\draw[shift={(0,\y)},color=red] (3pt,0pt) -- (-3pt,0pt);
+				\foreach \y in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+				\draw[shift={(0,\y)},color=red] (0pt,0pt) -- (3pt,0pt) node[left] 
+				{$\y i$};
+				%\draw[fill=black] (1,1) circle(2.5pt) node[above,right](P) {$1+i$};
+				\draw[help lines, color=gray!30, dashed] (-1,-5) grid (8,5);
+			\end{tikzpicture}" src="images/img-0015.svg"/>
+</div> </div> <span class="vspace" style="height: 56.905511811023615pt"></span>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+<script id="plastex-labels" type="application/json">{"HO1": {"ref": "1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html"}, "img_quad1": {"ref": "1.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html#img_quad1"}, "HO2": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html"}, "ex_quad_comp": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "ex_quad2": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "eq_quad1": {"ref": "2.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad1"}, "eq_quadsol1": {"ref": "2.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quadsol1"}, "eq_quad2": {"ref": "2.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad2"}, "HO3": {"ref": "3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html"}, "fig_ComNo_1": {"ref": "3.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_ComNo_1"}, "fig_PolarComp_1": {"ref": "3.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_PolarComp_1"}, "fig_Argand_Quad": {"ref": "3.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_Argand_Quad"}, "eq_EulerRel": {"ref": "4.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_EulerRel"}, "eq_complexnoform1": {"ref": "4.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complexnoform1"}, "eq_ComplexMult1": {"ref": "4.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult1"}, "eq_ComplexMult2": {"ref": "4.4", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult2"}, "eq_complex_powers_exponential": {"ref": "4.7", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_exponential"}, "eq_complex_powers_polar": {"ref": "4.8", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_polar"}, "eq_complex_roots1": {"ref": "4.9", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_roots1"}, "eq_complex_DeMoivres": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_deMoivre": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_complex4": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_complex4"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.1.0, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-09</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>

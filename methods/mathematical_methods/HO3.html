@@ -1,0 +1,1594 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Angharad Ugonna" />
+            <meta name="date" content="2024-09-09" />
+        
+
+        <title>3 Complex Numbers: Polar and Cartesian Coordinates | Mathematical and Statistical Methods</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1725899447.669278">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725899447.669278">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1725899447.669278">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1725899447.669278', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1725899447.669278"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1725899447.669278"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1725899447.669278"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1725899447.669278" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1725899447.669278">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" alt="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" alt="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725899447.669278">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" alt="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Mathematical and Statistical Methods</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="index.html">Mathematical Methods - Calculus</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                3 Complex Numbers: Polar and Cartesian Coordinates
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="HO2.html">Previous: 2 Introduction to Complex Numbers</a>
+            
+            
+            <a rel="next" href="0001.html">Next: 4 Complex Numbers: Exponential Form and De Moivre’s Theorem</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a href="pdf/complex_numbers_pola.pdf"download><svg class="icon" alt="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#HO3">3 Complex Numbers: Polar and Cartesian Coordinates</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000167">3.1 Polar and Cartesian Co-ordinate Systems </a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000181">3.1.1 Modulus and Argument of a Complex Number</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000182">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000186">3.1.2 Units for Angles</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000194">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000198">3.2 Converting between Polar and Cartesian form </a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000199">3.2.1 Part 1: Graphically</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000223">3.2.2 Part 2: Algebraically</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000229">Solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000230">Solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000232">Complex numbers outside the first quadrant</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000234">Solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000235">Using your calculator to convert between polar and Cartesian </a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000246">3.2.3 Alternative forms for polar form</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <!-- Latex Chapter/Part -->
+<h1 id="HO3">3 Complex Numbers: Polar and Cartesian Coordinates</h1>
+<p>
+ In the previous chapter we introduced the concept of imaginary numbers and formed a new number system called complex numbers. We learned how to add, subtract, multiply and divide these numbers and how to represent them graphically. 
+</p>
+<p>
+In this chapter we are going to delve further into some interesting properties of complex numbers and consider how we represent them. 
+</p>
+<section class="section">
+<h2 id="a0000000167">3.1 Polar and Cartesian Co-ordinate Systems </h2>
+<p>
+ To specify 
+</p>
+<ul class="itemize" id="a0000000168">
+<li id="a0000000169">
+<p>
+the position of a point on a plane, or 
+</p>
+</li>
+<li id="a0000000170">
+<p>
+a complex number 
+</p>
+</li>
+</ul>
+<p>
+ we always need two bits of information, for example 
+</p>
+<ol class="enumerate" id="a0000000171">
+<li id="a0000000172" value="1">
+<p>
+<script type="math/tex">(x,y)</script> co-ordinates 
+</p>
+</li>
+<li id="a0000000173" value="2">
+<p>
+Real and imaginary parts <script type="math/tex">x+yi</script>
+</p>
+</li>
+</ol>
+<figure id="fig_ComNo_1">
+<p>
+<div class="centered"> <div class="tikzcd" id="a0000000174">
+<img alt="\begin{tikzpicture} 
+			%\draw[help lines, color=gray!30, dashed] (-6,-6) grid (6,6);
+			\draw[-&gt;,thick,color=black] (-0.5,0) -- (6.5,0) ;
+			\draw[-&gt;,thick, color=black] (-0.5,0) -- (6.5,0) ;
+			\foreach \x in {4}
+			\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+			{$\x$};
+			\draw (0,6.) node[left] {$y$}; 
+				\draw (6.3,0) node[below] {$x$}; 
+			\draw[-&gt;, color=black] (0,-0.5) -- (0,6.5) ;
+			\foreach \y in {3}
+			\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+			{$\y $};
+			\draw[fill=black] (4,3) circle(3.5pt) node[above,right](P) {$P=(4,3)$};
+			\draw[dashed] (0,3) -- (4,3) ;
+			\draw[dashed] (4,0) -- (4,3) ;
+		\end{tikzpicture}" src="images/img-0016.svg"/>
+</div> </div>
+<div class="centered"> <div class="tikzcd" id="a0000000175">
+<img alt="\begin{tikzpicture} 
+			%\draw[help lines, color=gray!30, dashed] (-6,-6) grid (6,6);
+		%	\draw[-&gt;,thick,color=black] (-0.5,0) -- (6.5,0) ;
+			\draw[-&gt;,thick, color=black] (-0.5,0) -- (6.5,0) ;
+			\foreach \x in {4}
+			\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+			{$\x$};
+			\draw (0,6.) node[left] {$Im$}; 
+			\draw (6.3,0) node[below] {$Re$}; 
+			\draw[-&gt;, color=black] (0,-0.5) -- (0,6.5) ;
+			\foreach \y in {3}
+			\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+			{$\y i$};
+			\draw[fill=black] (4,3) circle(3.5pt) node[above,right](P) {$z=4 + 3i$};
+			\draw[dashed] (0,3) -- (4,3) ;
+			\draw[dashed] (4,0) -- (4,3) ;
+		\end{tikzpicture}" src="images/img-0017.svg"/>
+</div> </div>
+</p>
+<figcaption id="fig_ComNo_1">
+<span class="caption_title">Figure</span>
+<span class="caption_ref">3.1</span>
+<span class="caption_text">Example of complex number drawn in the complex plane</span>
+</figcaption>
+</figure>
+<p>
+ This system, where we give the distance along, and the distance up, is known as a Cartesian co-ordinate system (although calculators dumb-down, and call it a ‘rectangular’ co-ordinate system. Those are not the only options, however. 
+</p>
+<p>
+The most common alternative to Cartesian co-ordinates is a system of <b class="bfseries">Polar Co-ordinates</b>. In this, we specify an origin and a single axis, which correspond to the origin and <script type="math/tex">x</script>-axis in the Cartesian system. Then to say where the point is, we give its distance from the origin, <script type="math/tex">r</script>, and the angle of rotation from the axis, <script type="math/tex">\theta </script>. 
+</p>
+<p>
+Key features of polar co-ordinates are: 
+</p>
+<ul class="itemize" id="a0000000176">
+<li id="a0000000177">
+<p>
+The positive direction for rotation is <b class="bfseries">anticlockwise</b>. 
+</p>
+</li>
+<li id="a0000000178">
+<p>
+The negative direction for rotation is <b class="bfseries">clockwise</b>. 
+</p>
+</li>
+<li id="a0000000179">
+<p>
+When we’re talking about co-ordinates, we write this <script type="math/tex">(r,\theta )</script>. 
+</p>
+</li>
+<li id="a0000000180">
+<p>
+When we’re talking about a complex number, we write <script type="math/tex">r\angle \theta </script>. 
+</p>
+</li>
+</ul>
+<figure id="fig_PolarComp_1">
+<div class="centered"> <img alt="\includegraphics[scale=1]{Images/fig_PolarComp_1.png}" src="images/img-0004.png"/> <figcaption id="fig_PolarComp_1">
+<span class="caption_title">Figure</span>
+<span class="caption_ref">3.2</span>
+<span class="caption_text">Figure showing polar co-ordinates in 2D plane.</span>
+</figcaption> </div>
+</figure>
+<p>
+ In our example above we have 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">P=(5,36.9^{\circ }) \qquad \text{(3 sig fig)} \quad \text{ and } \qquad z=5\angle 36.9^{\circ } \qquad \text{(3 sig fig)}</script></span>
+<p>
+Notice that as with Cartesian co-ordinates, we need two bits of information, but here we give the distance from the origin and the angle relative to the horizontal axis. 
+</p>
+<section class="subsection">
+<h3 id="a0000000181">3.1.1 Modulus and Argument of a Complex Number</h3>
+<p>
+ For complex numbers, the distance and angle have special names and notation. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 8. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<dl class="description">
+<dt>Modulus</dt>
+<dd><p>
+The distance from the origin, <script type="math/tex">r</script>. Denote modulus of <script type="math/tex">z</script> = <script type="math/tex">|z|</script> - vertical lines either side of the complex number. 
+</p>
+</dd>
+<dt>Argument</dt>
+<dd><p>
+The angle relative to the axis, <script type="math/tex">\theta </script>, denoted <script type="math/tex">\arg (z)</script>. 
+</p>
+</dd>
+</dl>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 12. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<span class="dmath"><script type="math/tex; mode=display">|3\angle 45^{\circ }| = 3 \qquad \text{since} \qquad |r\angle \theta |=r</script></span> and <span class="dmath"><script type="math/tex; mode=display">arg(3\angle 45^{\circ }) = 45^{\circ } \qquad \text{since} \qquad arg(r\angle \theta ) = \theta</script></span>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<h4 id="a0000000182">Note</h4>
+<ol class="enumerate" id="a0000000183">
+<li id="a0000000184" value="1">
+<p>
+These names do not apply to co-ordinates of a point, only to complex numbers. 
+</p>
+</li>
+<li id="a0000000185" value="2">
+<p>
+Compare the use of ‘modulus’ with a use you’ve already met, <script type="math/tex">|-2|=|2|=2</script>. Where are -2 and 2 on the complex plane? How far are they from the origin? 
+</p>
+</li>
+</ol>
+</section><section class="subsection">
+<h3 id="a0000000186">3.1.2 Units for Angles</h3>
+<p>
+ You know that we have two units for angles, degrees (which we indicate with a little <script type="math/tex">^{\circ }</script>) and radians, which we can indicate by ‘rads’ or a little <script type="math/tex">c</script> (<script type="math/tex">^c</script>). 
+</p>
+<ul class="itemize" id="a0000000187">
+<li id="a0000000188">
+<p>
+A full turn is <script type="math/tex">360^{\circ }=2\pi ^c</script>
+</p>
+</li>
+<li id="a0000000189">
+<p>
+It follows that a half turn is <script type="math/tex">180^{\circ }=\pi ^c</script>
+</p>
+</li>
+<li id="a0000000190">
+<p>
+Dividing both sides by <script type="math/tex">\pi </script> gives <script type="math/tex">1^c=\left(\frac{180}{\pi }\right)^{\circ } </script> Alternatively, dividing both sides by 180 gives <script type="math/tex">1^{\circ }=\left(\frac{\pi }{180}\right)^c</script>
+</p>
+</li>
+</ul>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 13. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000191">
+<li id="a0000000192" value="1">
+<p>
+Convert <script type="math/tex">36.9^{\circ }</script> from degrees to radians. 
+</p>
+</li>
+<li id="a0000000193" value="2">
+<p>
+Convert <script type="math/tex">\frac{\pi }{2}</script> from radians to degrees. 
+</p>
+</li>
+</ol>
+</div></span>
+</p>
+</p>
+<h4 id="a0000000194">Solution</h4>
+<ol class="enumerate" id="a0000000195">
+<li id="a0000000196" value="1">
+<p>
+Since <script type="math/tex">1^{\circ }=\left(\frac{\pi }{180}\right)^c</script>, multiplying both sides by 36.9 gives 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} 36.9^{\circ }& =&  \left(\frac{36.9\pi }{180}\right)^c\\ & =& 0.644^c \quad \text{ 3 sig fig (simplifying)} \end{array}</script></span>
+</li>
+<li id="a0000000197" value="2">
+<p>
+Since <script type="math/tex">1^c=\left(\frac{180}{\pi }\right)^{\circ }</script>, multiplying both sides by <script type="math/tex">\frac{\pi }{2}</script> gives 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\left(\frac{\pi }{2}\right)^c=\left(\frac{\pi }{2}\times \frac{180}{\pi }\right)^{\circ } = 90^{\circ } \quad \text{(simplifying)}</script></span>
+</li>
+</ol>
+<p>
+When we specify a point in Polar co-ordinates <script type="math/tex">(r,\theta )</script> or a complex number in Polar form <script type="math/tex">r\angle \theta </script> it doesn’t matter whether we use degrees or radians (as long as we give the units). In our example above <div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} P& = (5,36.9^{\circ }) & =(5,0.644^c) \quad \text{3 sig fig}\\ z& = 5\angle 36.9^{\circ } & =5\angle 0.644^c \quad \text{3 sig fig} \end{array}</script></span>
+</div> <span class="vspace medskip"></span>
+</p>
+<p>
+<b class="bfseries">However</b>, some maths (crucially, calculus, and soon, the exponential form of a complex number) work best with radians . For this reason, <b class="bfseries">mathematicians almost always USE RADIANS</b>. 
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000198">3.2 Converting between Polar and Cartesian form </h2>
+<section class="subsection">
+<h3 id="a0000000199">3.2.1 Part 1: Graphically</h3>
+<p>
+ For some simple cases, conversion between the two forms is best done with a quick sketch. 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 14. </b> <span class="rmfamily"><p>
+<div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000200">
+<li id="a0000000201" value="1">
+<p>
+Convert <script type="math/tex">3i</script> to polar form 
+</p>
+<div class="centered"><div class="tikzcd" id="a0000000202">
+<img alt="\begin{tikzpicture} [scale=.5]
+						%\draw[help lines, color=gray!30, dashed] (-6,-6) grid (6,6);
+					%	\draw[-&gt;,thick,color=black] (-0.5,0) -- (6.5,0) ;
+					\draw[-&gt;, color=black] (-6.5,0) -- (6.5,0) ;
+%					\foreach \x in {4}
+%					\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+%					{$\x$};
+					\draw (0,6.) node[left] {$Im$}; 
+					\draw (6.3,0) node[below] {$Re$}; 
+					\draw[-&gt;, color=black] (0,-6.5) -- (0,6.5) ;
+%					\foreach \y in {3}
+%					\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+%					{$\y i$};
+					\draw[fill=black] (0,3) circle(3.5pt) node[above,right](P) {   $z= 3i$};
+					\draw[thick] (0,0) -- (0,3) ;
+					
+				\end{tikzpicture}" src="images/img-0018.svg"/>
+</div>
+<p>
+<script type="math/tex">3i \equiv 3\angle \frac{\pi }{2}</script>
+</p>
+</div>
+</li>
+<li id="a0000000203" value="2">
+<p>
+Convert <script type="math/tex">2\angle \pi </script> to Cartesian form 
+</p>
+<div class="centered"><div class="tikzcd" id="a0000000204">
+<img alt="\begin{tikzpicture} [scale=.5]
+						\draw[-&gt;, color=black] (-6.5,0) -- (6.5,0) ;
+						\draw (0,6.) node[left] {$Im$}; 
+			\draw (6.3,0) node[below] {$Re$}; 
+			\draw[-&gt;, color=black] (0,-6.5) -- (0,6.5) ;
+								\foreach \x in {-2,2}
+								\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (3pt,0pt) node[below] 
+								{$\x$};
+		%	\draw[fill=black] (-2,0) circle(3.5pt) node[above] { $z= 2\angle \pi $};
+			\draw[thick] (2,0) -- (-2,0) ;
+			% \draw [-&gt;,color=red] (2,0) to [bend right=45] (-2,0);
+			 \draw (2,0) coordinate (A) -- (0,0) coordinate (B)
+			 -- (-2,0) coordinate (C)
+			 %pic [fill=black!50]                      {angle = A--B--C}
+			 pic [draw,-&gt;,color=red,thick,angle radius=1cm] {angle = A--B--C};
+		\end{tikzpicture}" src="images/img-0019.svg"/>
+</div>
+<p>
+<script type="math/tex">2\angle \pi \equiv -2</script>
+</p>
+</div>
+</li>
+</ol>
+</div>
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 7. </b> <span class="rmfamily"><b class="bfseries">Converting between polar and Cartesian 1</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000205">
+<li id="a0000000206" value="1">
+<p>
+Sketch these numbers on an Argand diagram, and hence convert those that in in polar form to Cartesian, and vice versa (no calculations should be necessary, except, perhaps, in <script type="math/tex">\sqrt{2}\angle -\frac{\pi }{4}^c</script>)     <ol class="enumerate" id="a0000000207">
+<li id="a0000000208" value="1">
+<p>
+<script type="math/tex">1\angle 180^{\circ }</script>
+</p>
+</li>
+<li id="a0000000209" value="2">
+<p>
+-2 
+</p>
+</li>
+<li id="a0000000210" value="3">
+<p>
+<script type="math/tex">8i</script>
+</p>
+</li>
+<li id="a0000000211" value="4">
+<p>
+<script type="math/tex">\sqrt{2}\angle -\left(\frac{\pi }{4}\right)^c</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000212" value="2">
+<p>
+For each of the complex numbers given above, state the modulus and argument. Use statements with the correct notation, for example 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">|1\angle 180^{\circ }|=1 \qquad \text{ and } \qquad \arg (1 \angle 180^{\circ })=180^{\circ }.</script></span>
+</li>
+<li id="a0000000213" value="3">
+<p>
+Now consider the sketch shown here, which shows a complex number 
+</p>
+<span><script type="math/tex; mode=display">\begin{eqnarray*}  z& =& a+bi\\ & =& r\angle \theta . \end{eqnarray*}</script></span>
+</li>
+<li id="a0000000214" value="4">
+<p>
+Use Pythagoras and trigonometry to find relationships (ie formulae) for: 
+</p>
+<p>
+<div class="minipage" id="a0000000215" style="width: 258.36525pt"> <ol class="enumerate" id="a0000000216">
+<li id="a0000000217" value="1">
+<p>
+<script type="math/tex">Re(z)=a</script> in terms of <script type="math/tex">r</script> and <script type="math/tex">\theta </script>
+</p>
+</li>
+<li id="a0000000218" value="2">
+<p>
+<script type="math/tex">Im(z)=b</script> in terms of <script type="math/tex">r</script> and <script type="math/tex">\theta </script>
+</p>
+</li>
+<li id="a0000000219" value="3">
+<p>
+<script type="math/tex">|z|=r</script> in terms of <script type="math/tex">a</script> and <script type="math/tex">b</script>
+</p>
+</li>
+<li id="a0000000220" value="4">
+<p>
+<script type="math/tex">\arg (z)=\theta </script> in terms of <script type="math/tex">a</script> and <script type="math/tex">b</script>. 
+</p>
+</li>
+</ol>
+</div> <div class="minipage" id="a0000000221" style="width: 164.41424999999998pt"> <div class="centered"> <div class="tikzcd" id="a0000000222">
+<img alt="\begin{tikzpicture} 
+							\draw[-&gt;,thick, color=black] (-0.5,0) -- (3.5,0) ;
+							\foreach \x in {3}
+							\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+							{$a$};
+							\draw (0,3.1) node[left] {$Im$}; 
+							\draw (3.6,0) node[below] {$Re$}; 
+							\draw[-&gt;, color=black] (0,-0.5) -- (0,3) ;
+							\foreach \y in {2}
+							\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+							{$b$};
+							\draw[fill=black] (3,2) circle(3.5pt) node[above,right](P) {$z$};
+							\draw[fill=black] (1,1.1)  node[above,right](P) {$r$};
+								\draw[fill=black] (1,3/9)  node[right](Q) {$\theta$};
+							\draw[thick] (0,0) -- (3,2) ;
+							\draw[dashed] (3,0) -- (3,2) ;
+								\draw[dashed] (0,2) -- (3,2) ;
+								
+							\draw (1/3,2/9) coordinate (A) -- (0,0) coordinate (B)
+								-- (0.5,0) coordinate (C)
+								%pic [fill=black!50]                      {angle = A--B--C}
+								pic [draw,-&gt;,thick,angle radius=1cm] {angle = C--B--A};
+						\end{tikzpicture}" src="images/img-0020.svg"/>
+</div> </div> </div>
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000223">3.2.2 Part 2: Algebraically</h3>
+<p>
+ For everything other than the easy cases, to convert between different forms, we have Pythagoras and trigonometry. 
+</p>
+<p>
+<div class="minipage" id="a0000000224" style="width: 164.41424999999998pt"> <div class="centered"> <div class="tikzcd" id="a0000000225">
+<img alt="\begin{tikzpicture} 
+			\draw[-&gt;,thick, color=black] (-0.5,0) -- (3.5,0) ;
+			\foreach \x in {3}
+			\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+			{$a$};
+			\draw (0,3.1) node[left] {$Im$}; 
+			\draw (3.6,0) node[below] {$Re$}; 
+			\draw[-&gt;, color=black] (0,-0.5) -- (0,3) ;
+			\foreach \y in {2}
+			\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+			{$b$};
+			\draw[fill=black] (3,2) circle(3.5pt) node[above,right](P) {$z$};
+			\draw[fill=black] (1,1.1)  node[above,right](P) {$r$};
+			\draw[fill=black] (1,3/9)  node[right](Q) {$\theta$};
+			\draw[thick] (0,0) -- (3,2) ;
+			\draw[dashed] (3,0) -- (3,2) ;
+			\draw[dashed] (0,2) -- (3,2) ;
+			
+			\draw (1/3,2/9) coordinate (A) -- (0,0) coordinate (B)
+			-- (0.5,0) coordinate (C)
+			%pic [fill=black!50]                      {angle = A--B--C}
+			pic [draw,-&gt;,thick,angle radius=1cm] {angle = C--B--A};
+		\end{tikzpicture}" src="images/img-0021.svg"/>
+</div> </div> </div> <div class="minipage" id="a0000000226" style="width: 281.853pt"> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     Let <span class="dmath"><script type="math/tex; mode=display">z=a+bi=r\angle \theta</script></span> where <span class="dmath"><script type="math/tex; mode=display">r=\sqrt{a^2+b^2}</script></span> and <span class="dmath"><script type="math/tex; mode=display">a = r\cos \theta \text{ and } b = r\sin \theta</script></span> by rules of right angled triangles. Thus, substituting <script type="math/tex">a</script> and <script type="math/tex">b</script> into <script type="math/tex">z</script> we have: <span class="dmath"><script type="math/tex; mode=display">a+bi = r\cos \theta + i\sin \theta</script></span>
+</div> </div>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 15. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000227">
+<li id="a0000000228" value="1">
+<p>
+Convert <script type="math/tex">4\angle \frac{\pi }{4}</script> to Cartesian form. 
+</p>
+<h4 id="a0000000229">Solution</h4>
+<p>
+ Here we have that <script type="math/tex">r = 4</script> and <script type="math/tex">\theta =\frac{\pi }{4}</script> so 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} a & =&  Re(z)\\ & =&  r\cos \theta \\ & =&  4\cos (\pi /4) \\ & =&  4\times \frac{\sqrt{2}}{2}\\ &  =&  2\sqrt{2} \end{array}</script></span>
+<p>
+ Similarly 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} b & =&  Im(z)\\ & =&  r\sin \theta \\ & =&  4\sin (\pi /4) \\ & =&  4\times \frac{\sqrt{2}}{2}\\ &  =&  2\sqrt{2} \end{array}</script></span>
+<p>
+ So 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">4\angle \frac{\pi }{4} = 2\sqrt{2}(1+i)</script></span>
+<p>
+<p>
+Convert <script type="math/tex">2+3i</script> to polar form. 
+</p>
+<h4 id="a0000000230">Solution</h4>
+<p>
+ By definition, the modulus is given by: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">r = |2+3i| = \sqrt{a^2+b^2} = \sqrt{2^2+3^2} = \sqrt{13}</script></span>
+<p>
+ and the argument: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} \arg {2+3i} & =&  \tan ^{-1} \left(\frac{3}{2}\right)\\ & =&  0.983^c \quad (\text{3sf})\\ \end{array}</script></span>
+<p>
+ Thus <script type="math/tex">2+3i = \sqrt{13}\angle 0.983^c</script>. 
+</p>
+<ol class="enumerate" id="a0000000231">
+</ol>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</p>
+</li>
+</ol>
+</div></span>
+</p>
+</p>
+<section class="subsubsection">
+<h4 id="a0000000232">Complex numbers outside the first quadrant</h4>
+<figure id="fig_Argand_Quad">
+<div class="centered"><div class="tikzcd" id="a0000000233">
+<img alt="\begin{tikzpicture} 
+		\draw[-&gt;,thick, color=black] (-3.5,0) -- (3.5,0) ;
+		\foreach \x in {3}
+		\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+		{$a$};
+		\draw (0,3.1) node[left] {$Im$}; 
+		\draw (3.6,0) node[below] {$Re$}; 
+		\draw[-&gt;, color=black] (0,-3.5) -- (0,3) ;
+		\foreach \y in {2}
+		\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+		{$b$};
+		\draw[fill=black] (3,2) circle(1.5pt) node[above,] {$z$};
+		\draw[fill=black] (3,-2) circle(1.5pt) node[below](P) {$z^*$};
+		\draw[fill=black] (-3,2) circle(1.5pt) node[above](P) {$-z^*$};
+		\draw[fill=black] (-3,-2) circle(1.5pt) node[below](P) {$-z$};
+%		\draw[fill=black] (1,1.1)  node[above,right](P) {$r$};
+%		\draw[fill=black] (1,3/9)  node[right](Q) {$\theta$};
+%		\draw[thick] (0,0) -- (3,2) ;
+		\draw[dashed] (3,0) -- (3,2) ;
+		\draw[dashed] (0,2) -- (3,2) ;
+			\draw[dashed] (-3,0) -- (-3,2) ;
+		\draw[dashed] (0,2) -- (-3,2) ;
+		\draw[dashed] (3,0) -- (3,-2) ;
+		\draw[dashed] (0,-2) -- (3,-2) ;
+		\draw[dashed] (-3,0) -- (-3,-2) ;
+		\draw[dashed] (0,-2) -- (-3,-2) ;
+		\draw (1.5,1) node {\Large{\textbf{1}}};
+		\draw (-1.5,1) node {\Large{\textbf{4}}};
+		\draw (-1.5,-1) node {\Large{\textbf{3}}};
+		\draw (1.5,-1) node {\Large{\textbf{2}}};
+		
+%		\draw (1/3,2/9) coordinate (A) -- (0,0) coordinate (B)
+%		-- (0.5,0) coordinate (C)
+%		%pic [fill=black!50]                      {angle = A--B--C}
+%		pic [draw,-&gt;,thick,angle radius=1cm] {angle = C--B--A};
+	\end{tikzpicture}" src="images/img-0022.svg"/>
+</div>
+<figcaption id="fig_Argand_Quad">
+<span class="caption_title">Figure</span>
+<span class="caption_ref">3.3</span>
+<span class="caption_text">Plot showing the different quadrants of the Argand diagram.</span>
+</figcaption>
+</div>
+</figure>
+<p>
+For any complex number where the real or imaginary part is negative, the number lies outside the first quadrant of the complex plane (see Figure   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_Argand_Quad">3.3</a>
+). In these cases, the formulae we have above for finding the real and imaginary parts from the polar form, and for finding the modulus from the Cartesian form are unchanged, but we have to be careful about the argument, remembering that this is <b class="bfseries">the angle relative to the horizontal axis. </b> <b class="bfseries">Always draw a picture.</b>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 16. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Convert -2+3i to polar form. 
+</div></span>
+</p>
+</p>
+<h4 id="a0000000234">Solution</h4>
+<p>
+ The modulus is given as in the previous example 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">|-2+3i| = \sqrt{(-2)^2+3^2} = \sqrt{13}</script></span>
+<p>
+ Note that it doesn’t matter if we use the real part -2 or just 2. 
+</p>
+<p>
+The angle <script type="math/tex">\beta </script> is given by 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\beta =\tan ^(-1)\left(\frac{3}{2}\right)=0.983^c \quad \text{ (calc,3 sf) }</script></span>
+<p>
+ where we use the length of the triangle’s sides, rather than the real and imaginary parts with minus signs attached. However, this is not the angle we require. Instead, we want <script type="math/tex">\theta </script> which is given in this example by 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\theta =\pi - \beta =\pi -0.983 = 2.16 \quad \text{ (3sf)}</script></span>
+<p>
+Hence 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">-2+3i=\sqrt{13}\angle 2.16^c.</script></span>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</section><section class="subsubsection">
+<h4 id="a0000000235">Using your calculator to convert between polar and Cartesian </h4>
+<p>
+ A few calculators can deal with complex numbers, in which case they can convert between polar and Cartesian form. Almost all scientific calculators can convert between polar and Cartesian co-ordinates, however. 
+</p>
+<p>
+Because every calculator is different, it is not possible to write notes on how to do it here. although we can say that most calculators refer to Cartesian co-ordinates as ‘rectangular’ co-ordinates. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 8. </b> <span class="rmfamily"><b class="bfseries">Converting between polar and Cartesian 2</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000236">
+<li id="a0000000237" value="1">
+<p>
+Convert the following to Cartesian form. All angles are in radians:     <ol class="enumerate" id="a0000000238">
+<li id="a0000000239" value="1">
+<p>
+<script type="math/tex">3\angle -\frac{2\pi }{3}</script>
+</p>
+</li>
+<li id="a0000000240" value="2">
+<p>
+<script type="math/tex">3\angle 1</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000241" value="2">
+<p>
+Convert the following to Polar form, giving your answers in radians:     <ol class="enumerate" id="a0000000242">
+<li id="a0000000243" value="1">
+<p>
+<script type="math/tex">5+2i</script>
+</p>
+</li>
+<li id="a0000000244" value="2">
+<p>
+<script type="math/tex">-3-2i</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000245" value="3">
+<p>
+Check your calculator manual (Google to find it online, if you’ve lost it) for how to convert between polar and Cartesian (“rectangular”), and check your answers to the questions above. 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+</section><section class="subsection">
+<h3 id="a0000000246">3.2.3 Alternative forms for polar form</h3>
+<p>
+A curious thing about polar form is that, unlike with Cartesian co-ordinates, the way of specifying a point/complex number is not unique. 
+</p>
+<p>
+Consider a complex number <script type="math/tex">z=4 \angle \frac{3\pi }{2}</script>. 
+</p>
+<p>
+An alternative version of this would be <script type="math/tex">z=4 \angle -\frac{\pi }{2}</script>. Another alternative would be <script type="math/tex">z=4 \angle \frac{3\pi }{2}+2\pi = \frac{7\pi }{2}</script>. 
+</p>
+<p>
+In fact, we could always add or subtract any number of full turns <script type="math/tex">z=4 \angle \frac{3\pi }{2}+2n\pi </script> where <script type="math/tex">n\in \mathbb {Z}.</script>
+</p>
+<p>
+In general, we can say that for any complex number 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">r\angle \theta =r\angle (\theta +2n\pi ).</script></span>
+<p>
+We could, if we wanted to, give a negative distance for <script type="math/tex">r</script> (imagine an instruction “turn 45 degrees to the left, and walk backwards 5 paces”.) In this case, we could say 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">r\angle \theta =-r\angle (\theta \pm 2n\pi .</script></span>
+<p>
+) We always give positive distance <script type="math/tex">r</script>, the smallest possible angle, ie <script type="math/tex">-\pi <\theta \leq \pi </script>. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 9. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Write these complex numbers with a more sensible argument (all arguments are in radians)     <ol class="enumerate" id="a0000000247">
+<li id="a0000000248" value="1">
+<p>
+<script type="math/tex">4\angle \frac{5\pi }{2}</script>
+</p>
+</li>
+<li id="a0000000249" value="2">
+<p>
+<script type="math/tex">3\angle -3\pi </script>
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 10. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000250">
+<li id="a0000000251" value="1">
+<p>
+Three complex numbers are defined as <script type="math/tex">z_1=4+2i</script>, <script type="math/tex">z_2 = 2-3i</script>, <script type="math/tex">z_3=2-1</script>. Mark the numbers on an Argand diagram. Write down <script type="math/tex">z_1^*,z_2^*</script> and <script type="math/tex">z_3^*</script> and mark these on your Argand diagram. 
+</p>
+</li>
+<li id="a0000000252" value="2">
+<p>
+Write these complex numbers with a more sensible argument (all arguments are in radians) 
+</p>
+<ol class="enumerate" id="a0000000253">
+<li id="a0000000254" value="1">
+<p>
+<script type="math/tex">2\angle \frac{7\pi }{6}</script>
+</p>
+</li>
+<li id="a0000000255" value="2">
+<p>
+<script type="math/tex">1\angle \frac{215\pi }{23}</script>
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000256" value="3">
+<ol class="enumerate" id="a0000000257">
+<li id="a0000000258" value="1">
+<p>
+Given that <script type="math/tex">z=1+i</script>, mark <script type="math/tex">z</script> on an Argand diagram and convert it to polar form. 
+</p>
+</li>
+<li id="a0000000259" value="2">
+<p>
+Use this (and your Argand diagram) to write down the following in polar form (without further calculations): 
+</p>
+<ol class="enumerate" id="a0000000260">
+<li id="a0000000261" value="1">
+<p>
+<script type="math/tex">1-i</script>
+</p>
+</li>
+<li id="a0000000262" value="2">
+<p>
+<script type="math/tex">-1+i</script>
+</p>
+</li>
+<li id="a0000000263" value="3">
+<p>
+<script type="math/tex">-1-i</script>. 
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li id="a0000000264" value="4">
+<p>
+Convert the following to Cartesian form. All angles are in radians: 
+</p>
+<ol class="enumerate" id="a0000000265">
+<li id="a0000000266" value="1">
+<p>
+<script type="math/tex">2\angle \pi /6</script>
+</p>
+</li>
+<li id="a0000000267" value="2">
+<p>
+<script type="math/tex">2\angle 13\pi /6</script>
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000268" value="5">
+<p>
+Convert the following to Polar form, giving your answers in radians. 
+</p>
+<ol class="enumerate" id="a0000000269">
+<li id="a0000000270" value="1">
+<p>
+<script type="math/tex">-5-2i</script>
+</p>
+</li>
+<li id="a0000000271" value="2">
+<p>
+<script type="math/tex">-5+2i</script>
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000272" value="6">
+<p>
+Find the following 
+</p>
+<ol class="enumerate" id="a0000000273">
+<li id="a0000000274" value="1">
+<p>
+<script type="math/tex">|-2+6i|</script>
+</p>
+</li>
+<li id="a0000000275" value="2">
+<p>
+<script type="math/tex"> \arg (-3+4i)</script>
+</p>
+</li>
+<li id="a0000000276" value="3">
+<p>
+<script type="math/tex">Re (6\angle 2\pi /3) </script>
+</p>
+</li>
+<li id="a0000000277" value="4">
+<p>
+<script type="math/tex">Im(\sqrt{3}\angle -3\pi /4)</script>
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000278" value="7">
+<ol class="enumerate" id="a0000000279">
+<li id="a0000000280" value="1">
+<p>
+Calculate <script type="math/tex">i^2,i^3,i^4,i^5,i^6</script>. 
+</p>
+</li>
+<li id="a0000000281" value="2">
+<p>
+Plot the following numbers on an Argand diagram: <script type="math/tex">i,i^2,i^3,i^4,i^5,i^6</script>
+</p>
+</li>
+<li id="a0000000282" value="3">
+<p>
+What do you notice about their positions on the complex plane? Use the pattern to quickly give the values of <script type="math/tex"> i^23,i^24,i^25</script>. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000283" value="8">
+<p>
+Given that <script type="math/tex">z=1+1i</script>, 
+</p>
+<ol class="enumerate" id="a0000000284">
+<li id="a0000000285" value="1">
+<p>
+calculate <script type="math/tex">z^2,z^3,z^4,z^5</script>
+</p>
+</li>
+<li id="a0000000286" value="2">
+<p>
+plot z and the numbers you’ve calculated in (a) on an Argand diagram. What do you notice about the pattern? 
+</p>
+</li>
+<li id="a0000000287" value="3">
+<p>
+without having to multiply out lots of sets of brackets, use the pattern to get <script type="math/tex">z^8,z^10,z^100</script>
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+</section>
+<script id="plastex-labels" type="application/json">{"HO1": {"ref": "1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html"}, "img_quad1": {"ref": "1.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html#img_quad1"}, "HO2": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html"}, "ex_quad_comp": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "ex_quad2": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "eq_quad1": {"ref": "2.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad1"}, "eq_quadsol1": {"ref": "2.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quadsol1"}, "eq_quad2": {"ref": "2.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad2"}, "HO3": {"ref": "3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html"}, "fig_ComNo_1": {"ref": "3.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_ComNo_1"}, "fig_PolarComp_1": {"ref": "3.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_PolarComp_1"}, "fig_Argand_Quad": {"ref": "3.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_Argand_Quad"}, "eq_EulerRel": {"ref": "4.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_EulerRel"}, "eq_complexnoform1": {"ref": "4.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complexnoform1"}, "eq_ComplexMult1": {"ref": "4.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult1"}, "eq_ComplexMult2": {"ref": "4.4", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult2"}, "eq_complex_powers_exponential": {"ref": "4.7", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_exponential"}, "eq_complex_powers_polar": {"ref": "4.8", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_polar"}, "eq_complex_roots1": {"ref": "4.9", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_roots1"}, "eq_complex_DeMoivres": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_deMoivre": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_complex4": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_complex4"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.1.0, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-09</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>

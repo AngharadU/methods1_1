@@ -1,0 +1,1551 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Angharad Ugonna" />
+            <meta name="date" content="2024-09-09" />
+        
+
+        <title>1 Functions | Mathematical and Statistical Methods</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1725899447.669278">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725899447.669278">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1725899447.669278">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1725899447.669278', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1725899447.669278"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1725899447.669278"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1725899447.669278"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1725899447.669278" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1725899447.669278">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" alt="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" alt="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725899447.669278">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" alt="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Mathematical and Statistical Methods</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="index.html">Mathematical Methods - Calculus</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                1 Functions
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="index.html">Previous: Mathematical Methods - Calculus</a>
+            
+            
+            <a rel="next" href="HO2.html">Next: 2 Introduction to Complex Numbers</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a href="pdf/functions.pdf"download><svg class="icon" alt="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#HO1">1 Functions</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000003">1.1 Formal Definition of a Function</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000008">1.2 Properties of a Function:</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000018">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000020">1.3 The Domain Convention</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000025">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000067">1.4 Polynomials</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000075">1.4.1 Quadratic Equations</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000082">Checking</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000083">Quadratic Graphs</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000084">Quadratic equations/ roots of a quadratic</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000092">Solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000094">The discriminant and roots</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000095">Graphically</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000097">Quadratic Formula</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <!-- Latex Chapter/Part -->
+<h1 id="HO1">1 Functions</h1>
+<section class="section">
+<h2 id="a0000000003">1.1 Formal Definition of a Function</h2>
+<p>
+ Whenever one quantity depends on another quantity then we can say that the former quantity is a function of the latter. 
+</p>
+<p>
+For example, the area of a circle depends on its radius so the area is a function of the radius:
+</p>
+<span class="dmath"><script type="math/tex; mode=display">A = \pi r^2.</script></span>
+<p>
+ The formula given is a rule that tells us how to calculate a unique (single) output value of the area, <script type="math/tex">A</script>, for each possible input value of the radius, <script type="math/tex">r</script>. 
+</p>
+<p>
+The set of all possible input values for the radius, called the <b class="bfseries">domain</b>, maps to a set of output values, called the <b class="bfseries">codomain</b> or <b class="bfseries">range</b>. In this example, the domain and range are the set of all positive real numbers (<script type="math/tex">[0,\infty )</script>). 
+</p>
+<p>
+Other examples include: the temperature at which water boils depends on its altitude above sea level and the interest paid depends of cash investment on the length of time for which the investment is made. 
+</p>
+<p>
+In calculus, we often generalise and refer to a generic function without having any particular formula in mind. To denote that <script type="math/tex">y</script> is a function of <script type="math/tex">x</script> we write 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">y=f(x),</script></span>
+<p>
+ which we read as “<script type="math/tex">y</script> equals <script type="math/tex">f</script> of <script type="math/tex">x</script>.” Here the function is represented by <script type="math/tex">f</script> with <script type="math/tex">x</script> being the independent input variable and <script type="math/tex">y</script> being the dependent output variable. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 1. </b> <span class="rmfamily"><p>
+<b class="bfseries">Function</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     A function is a mathematical relation between two sets, <script type="math/tex">X</script> and <script type="math/tex">Y</script>, such that for each element <script type="math/tex">x</script> in the set <script type="math/tex">X</script>, there is a unique element <script type="math/tex">y</script> in the set <script type="math/tex">Y</script>. <span class="dmath"><script type="math/tex; mode=display">\begin{array}{ll} f: X & \rightarrow Y \\ x & \mapsto y\\ y = &  f(x) \end{array}</script></span> <ul class="itemize" id="a0000000004">
+<li id="a0000000005">
+<p>
+<script type="math/tex">f</script> represents the function. 
+</p>
+</li>
+<li id="a0000000006">
+<p>
+<script type="math/tex">X</script> is the domain, the set of input values. 
+</p>
+</li>
+<li id="a0000000007">
+<p>
+<script type="math/tex">Y</script> is the codomain, the set of possible output values. 
+</p>
+</li>
+</ul>
+</div>
+</p>
+</span>
+</p>
+</p>
+</section><section class="section">
+<h2 id="a0000000008">1.2 Properties of a Function:</h2>
+<ul class="itemize" id="a0000000009">
+<li id="a0000000010">
+<p>
+Each element <script type="math/tex">x</script> in <script type="math/tex">X</script> (written as <script type="math/tex">x \in X</script> or “<script type="math/tex">x</script> belongs to <script type="math/tex">X</script>”) maps to a unique element <script type="math/tex">y</script> in <script type="math/tex">Y</script>. 
+</p>
+</li>
+<li id="a0000000011">
+<p>
+Not every element of <script type="math/tex">Y</script> needs to have a pre-image in <script type="math/tex">X</script>. 
+</p>
+</li>
+<li id="a0000000012">
+<p>
+A function can be represented as ordered pairs: <script type="math/tex">\{ (x, y) \mid x \in X, y \in Y\} </script>. 
+</p>
+</li>
+<li id="a0000000013">
+<p>
+The graph of a function is the set of all ordered pairs <script type="math/tex">(x, f(x))</script>. 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: 5.690551181102363pt"></span>
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+<p>
+<span class="vspace" style="height: 0.0pt"></span>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 1. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000014">
+<li id="a0000000015" value="1">
+<p>
+The area of a circle is given by the function <script type="math/tex">A</script> such that <script type="math/tex">A(r) = \pi r^2</script>, for <script type="math/tex">R\geq 0</script>. 
+</p>
+</li>
+<li id="a0000000016" value="2">
+<p>
+The volume of a ball of radius <script type="math/tex">r</script> is given by the function <script type="math/tex">V(r) = \frac{4}{3}\pi r^3.</script> for <script type="math/tex">r\geq 0</script>. The volume of a ball of radius <script type="math/tex">6cm</script> is 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">V(6) = \frac{4}{3}\pi 6^3 = 288\pi \text{cm}^3.</script></span>
+<p>
+ Note how the variable <script type="math/tex">r</script> is replaced by the special value <script type="math/tex">r=6</script> in the formula defining the volume to obtain the value of the function at <script type="math/tex">r=6</script>. 
+</p>
+</li>
+<li id="a0000000017" value="3">
+<p>
+A function <script type="math/tex">F</script> is defined for all real numbers <script type="math/tex">t</script> by <script type="math/tex">F(t)=2t+3.</script> Find the output values fo <script type="math/tex">F</script> that correspond to the input values of <script type="math/tex">0,2,x+2</script> and <script type="math/tex">F(2)</script>. 
+</p>
+<h4 id="a0000000018">Solution</h4>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} F(0) & =&  2(0)+3 = 3\\ F(2) & =&  2(2)+3 = 7\\ F(x+2) & =&  2(x+2)+3 = 2x+7\\ F(F(2)) & =&  2(2(2)+3)+3 = 17\\ \end{array}</script></span>
+<ol class="enumerate" id="a0000000019">
+</ol>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</li>
+</ol>
+</div></span>
+</p>
+</p>
+</section><section class="section">
+<h2 id="a0000000020">1.3 The Domain Convention</h2>
+<p>
+ For a function to be properly defined then we must specify its domain. For example, let 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">f(x) = x^2\quad \text{for all} \quad x\geq 0 \qquad \text{and} \qquad g(x) = x^2 \quad \text{for all}\quad x.</script></span>
+<p>
+The domain convention states that <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     When a function <script type="math/tex">f</script> is defined without specifying its domain, we assume that the domain consists of all real numbers <script type="math/tex">x</script> for which the value <script type="math/tex">f(x)</script> of the of the function is a real number. 
+</div>
+</p>
+<p>
+Thus, if the function above is specified without a domain then we assume that we are talking about <script type="math/tex">g(x)</script>. 
+</p>
+<p>
+<span class="vspace" style="height: 0.0pt"></span>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 2. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000021">
+<li id="a0000000022" value="1">
+<p>
+The square root function: The domain of <script type="math/tex">f(x) = \sqrt{x}</script> is the interval <script type="math/tex">[0,\infty )</script>, since negative numbers do not have real square roots. Note that, by definition, a function has one unique output for each input. Therefore, to consider the square root to be a function then we only take the positive output. For example, if <script type="math/tex">x=4</script> then there are two possible answers, <script type="math/tex">x=-2</script> or <script type="math/tex">x=2</script>. Thus the square root function <script type="math/tex">\sqrt{x}</script> always denotes the nonnegative square root of <script type="math/tex">x</script>. The two solutions of the equation <script type="math/tex">x^2=4</script> are <script type="math/tex">x=\sqrt{4}=2</script> and <script type="math/tex">x=-\sqrt{4}=-2</script>. 
+</p>
+</li>
+<li id="a0000000023" value="2">
+<p>
+The domain of the function <script type="math/tex">g(x) = \frac{x}{x^2-1}</script> consists of all real numbers <b class="bfseries">except</b> <script type="math/tex">x=\pm 1</script>. Expressed in terms of intervals we have 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\text{dom}(g) = (-\infty ,-1) \cup (-1,1) \cup (1,\infty ).</script></span>
+</li>
+<li id="a0000000024" value="3">
+<p>
+The domain of <script type="math/tex">h(t) = \sqrt{4-t^2}</script> is defined only on the interval where <script type="math/tex">t-t^2\geq 0</script> so 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\text{dom}(h) = [-2,2].</script></span>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<h4 id="a0000000025">Note</h4>
+<p>
+ Curves that you can draw are not necessarily functions. By definition, a function, <script type="math/tex">f</script>, has one unique output thus no <b class="bfseries">vertical line</b> can intersect the graph of a function at more than one point. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 3. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Plot the graph of <script type="math/tex">x^2+y^2=1</script>. Show that this graph is not a function. <div class="centered"> <div class="tikzcd" id="a0000000026">
+<img alt="\begin{tikzpicture} 
+		\draw[latex-,color=black] (-2.5,0) -- (2.5,0) ;
+		\draw[-latex, color=black] (-2.5,0) -- (2.5,0) ;
+		\foreach \x in  {-2,-1,0,1,2}
+		\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+		\foreach \x in {-2,-1,0,1,2}
+		\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+		{$\x$};
+		\draw[latex-,color=black] (0,-2.5) -- (0,2.5) ;
+		\draw[-latex, color=black] (0,-2.5) -- (0,2.5) ;
+		\foreach \y in  {-2,-1,0,1,2}
+		\draw[shift={(0,\y)},color=black] (3pt,0pt) -- (-3pt,0pt);
+		\foreach \y in {-2,-1, ,1,2}
+		\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[right] 
+		{$\y$};
+		\draw (-0.2,2.2) node[left] {$y$};
+		\draw (2.4,0.1) node[above] {$x$};
+%		\draw[fill=black] (1,1) circle(2.5pt) node[above,right](P) {$1+i$};
+		\draw[help lines, color=gray!30, dashed] (-2,-2) grid (2,2);
+	\end{tikzpicture}" src="images/img-0001.svg"/>
+</div> </div>
+</div> <span class="vspace medskip"></span></span>
+</p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 1. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000027">
+<li id="a0000000028" value="1">
+<p>
+Find the domain and range of each of the following functions:     <ol class="enumerate" id="a0000000029">
+<li id="a0000000030" value="1">
+<p>
+<script type="math/tex">f(x)= 1 + x^2</script>
+</p>
+</li>
+<li id="a0000000031" value="2">
+<p>
+<script type="math/tex">g(x) = \sqrt{4-x}</script>
+</p>
+</li>
+<li id="a0000000032" value="3">
+<p>
+<script type="math/tex">h(x) = \frac{1}{x-2}</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000033" value="2">
+<p>
+By calculating the values of <script type="math/tex">f(x)</script> at <script type="math/tex">x=0,\pm 1/2,\pm 1, \pm 3/2, \pm 2,</script> sketch the graphs of the following functions:     <ol class="enumerate" id="a0000000034">
+<li id="a0000000035" value="1">
+<p>
+<script type="math/tex">y = c</script>
+</p>
+</li>
+<li id="a0000000036" value="2">
+<p>
+<script type="math/tex">y = x </script>
+</p>
+</li>
+<li id="a0000000037" value="3">
+<p>
+<script type="math/tex">y = x^2</script>
+</p>
+</li>
+<li id="a0000000038" value="4">
+<p>
+<script type="math/tex"> y = \sqrt{x}</script>
+</p>
+</li>
+<li id="a0000000039" value="5">
+<p>
+<script type="math/tex">y=x^3</script>
+</p>
+</li>
+<li id="a0000000040" value="6">
+<p>
+<script type="math/tex">y = x^{\frac{1}{3}} </script>
+</p>
+</li>
+<li id="a0000000041" value="7">
+<p>
+<script type="math/tex">y = \frac{1}{x}</script>
+</p>
+</li>
+<li id="a0000000042" value="8">
+<p>
+<script type="math/tex">y = \frac{1}{x^2}</script>
+</p>
+</li>
+<li id="a0000000043" value="9">
+<p>
+<script type="math/tex"> y = \sqrt{1-x^2}</script>
+</p>
+</li>
+<li id="a0000000044" value="10">
+<p>
+<script type="math/tex">y = |x| </script>
+</p>
+</li>
+<li id="a0000000045" value="11">
+<p>
+<script type="math/tex"> y = 1+\sqrt{x-4}</script>
+</p>
+</li>
+<li id="a0000000046" value="12">
+<p>
+<script type="math/tex">y = \frac{2-x}{x-1}</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000047" value="3">
+<p>
+Are the following graphs functions? Explain your reasoning.     <ol class="enumerate" id="a0000000048">
+<li id="a0000000049" value="1">
+<div class="tikzcd" id="a0000000050">
+<img alt="\begin{tikzpicture} [domain=-2:2]
+			%	\draw[very thin,color=gray!50] (-2.1,-1.1) grid (2.1,5.1);
+				
+				\draw[-&gt;] (-2.2,0) -- (2.2,0) node[right] {$x$};
+				\draw[-&gt;] (0,-1.2) -- (0,5.2) node[above] {$f(x)$};
+	
+				
+				\draw[color=red]    plot (\x,\x*\x+1) ;%            node[right] {$f(x) =x^2$};
+				% \x r means to convert '\x' from degrees to _r_adians:
+			%	\draw[color=blue]   plot (\x,{sin(\x r)})    node[right] {$f(x) = \sin x$};
+				%\draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+			\end{tikzpicture}" src="images/img-0002.svg"/>
+</div>
+</li>
+<li id="a0000000051" value="2">
+<div class="tikzcd" id="a0000000052">
+<img alt="\begin{tikzpicture} [domain=-2:2]
+			%	\draw[very thin,color=gray!50] (-0.1,-3.1) grid (4.1,3.1);
+				
+				\draw[-&gt;] (-0.2,0) -- (5.2,0) node[right] {$x$};
+				\draw[-&gt;] (0,-3.2) -- (0,3.2) node[above] {$f(x)$};
+				
+				
+				\draw[color=red]    plot (\x*\x+1,\x) ;%   
+		\end{tikzpicture}" src="images/img-0003.svg"/>
+</div>
+</li>
+<li id="a0000000053" value="3">
+<div class="tikzcd" id="a0000000054">
+<img alt="\begin{tikzpicture} [domain=-0.25:2]
+		%	\draw[very thin,color=gray!50] (-0.1,-3.1) grid (4.1,3.1);
+			
+			\draw[-&gt;] (-0.2,0) -- (4.2,0) node[right] {$x$};
+			\draw[-&gt;] (0,-3.2) -- (0,3.2) node[above] {$f(x)$};
+			
+			
+			\draw[color=red]    plot ({(\x-1)*(\x-1)+0.5},{2-(\x-2)*(\x-2)});%   
+		\end{tikzpicture}" src="images/img-0004.svg"/>
+</div>
+</li>
+<li id="a0000000055" value="4">
+<div class="tikzcd" id="a0000000056">
+<img alt="\begin{tikzpicture} 
+			
+			\draw[color=red] (0,0) ellipse (2cm and 1cm);
+				\draw[-&gt;] (-2.5,0) -- (2.5,0) node[right] {$x$};
+			\draw[-&gt;] (0,-2.2) -- (0,2.2) node[above] {$f(x)$};
+			
+		\end{tikzpicture}" src="images/img-0005.svg"/>
+</div>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000057" value="4">
+<p>
+Match graphs (i) -(iv) with the following functions:     <ol class="enumerate" id="a0000000058">
+<li id="a0000000059" value="1">
+<p>
+<script type="math/tex">x-x^4</script>
+</p>
+</li>
+<li id="a0000000060" value="2">
+<p>
+<script type="math/tex"> x^3-x^4</script>
+</p>
+</li>
+<li id="a0000000061" value="3">
+<p>
+<script type="math/tex">x(1-x)^2</script>
+</p>
+</li>
+<li id="a0000000062" value="4">
+<p>
+<script type="math/tex">x^2-x^3</script>. 
+</p>
+</li>
+</ol>
+</p>
+<p>
+<div class="tikzcd" id="a0000000063">
+<img alt="\begin{tikzpicture} [domain=-1:1.75]
+					\draw (-1.1,2.1) node[left] {i)};
+				\draw[very thin,color=gray!50] (-1.1,-3.1) grid (1.75,2.1);
+				\draw[-&gt;,color=black] (-1.1,0) -- (2,0) node[right] {$x$};
+				\draw[-&gt;] (0,-3.1) -- (0,2.2) node[above] {$y$};							
+				\draw[color=red]    plot (\x,{\x*\x*(1-\x)}) ;%   
+			\end{tikzpicture}" src="images/img-0006.svg"/>
+</div>
+<div class="tikzcd" id="a0000000064">
+<img alt="\begin{tikzpicture} [domain=-1:2.25]
+				\draw (-2.1,4.1) node[left] {ii)};
+				\draw[very thin,color=gray!50] (-2.1,-4.1) grid (2.5,4.1);
+				\draw[-&gt;,color=black] (-2,0) -- (2,0) node[right] {$x$};
+				\draw[-&gt;] (0,-4.2) -- (0,4.2) node[above] {$y$};							
+				\draw[color=red]    plot (\x,{\x*(1-\x)*(1-\x)}) ;%   
+			\end{tikzpicture}" src="images/img-0007.svg"/>
+</div>
+<div class="tikzcd" id="a0000000065">
+<img alt="\begin{tikzpicture} [domain=-1:1.25]
+					\draw (-2.1,2.1) node[left] {iii)};
+					\draw[very thin,color=gray!50] (-2.1,-2.1) grid (2.1,2.1);
+				\draw[-&gt;,color=black] (-2,0) -- (2,0) node[right] {$x$};
+				\draw[-&gt;] (0,-2.2) -- (0,1.2) node[above] {$y$};
+				\draw[color=red]    plot (\x,\x-\x*\x*\x*\x) ;%   
+			\end{tikzpicture}" src="images/img-0008.svg"/>
+</div>
+<div class="tikzcd" id="a0000000066">
+<img alt="\begin{tikzpicture} [domain=-1.22:1.75]
+					\draw (-2.1,1.1) node[left] {iv)};
+					\draw[very thin,color=gray!50] (-2.1,-4.1) grid (2.5,1.1);
+				\draw[-&gt;,color=black] (-2,0) -- (2,0) node[right] {$x$};
+				\draw[-&gt;] (0,-4.2) -- (0,1.2) node[above] {$y$};							
+				\draw[color=red]    plot (\x,{\x*\x*\x*(1-\x)}) ;%   
+			\end{tikzpicture}" src="images/img-0009.svg"/>
+</div>
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="section">
+<h2 id="a0000000067">1.4 Polynomials</h2>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 2. </b> <span class="rmfamily"><p>
+<b class="bfseries">Polynomial function</b>
+</p>
+<p>
+<div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<p>
+ A polynomial function is one that <em>only</em> involves non-negative integer powers of <script type="math/tex">x</script>, for example: 
+</p>
+<ul class="itemize" id="a0000000068">
+<li id="a0000000069">
+<p>
+<script type="math/tex">y=7x+4</script> <span class="hspace" style="width: 5.690551181102363pt"></span> (polynomial of order/degree 1, linear) <span class="vspace" style="height: 11.381102362204723pt"></span>
+</p>
+</li>
+<li id="a0000000070">
+<p>
+<script type="math/tex">y=3x^2-5x-1</script> <span class="hspace" style="width: 5.690551181102363pt"></span> (polynomial of order/degree 2, quadratic) <span class="vspace" style="height: 11.381102362204723pt"></span>
+</p>
+</li>
+<li id="a0000000071">
+<p>
+<script type="math/tex">y=-x^3+5x^2-7x+12.01</script> <span class="hspace" style="width: 5.690551181102363pt"></span> (poly. of order/degree 3, cubic) 
+</p>
+</li>
+</ul>
+<p>
+Functions containing negative or non-integer powers, or other functions, (such as trigonometric) are <b class="bfseries">not</b> polynomials, e.g. <span class="vspace" style="height: 5.690551181102362pt"></span>
+</p>
+<ul class="itemize" id="a0000000072">
+<li id="a0000000073">
+<p>
+<script type="math/tex">y=x^2+4\sqrt{x}-5</script> <span class="hspace" style="width: 56.90551181102363pt"></span> <script type="math/tex">y=\dfrac {5}{x^2}-7x^3+6x-4</script> <span class="vspace" style="height: 5.690551181102362pt"></span>
+</p>
+</li>
+<li id="a0000000074">
+<p>
+<script type="math/tex">y=x^{2} + \sin (x)</script>
+</p>
+</li>
+</ul>
+</div> <span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 3. </b> <span class="rmfamily"><p>
+<b class="bfseries">Equation of a straight line</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  y=mx+c \end{equation*}</script></span> where <script type="math/tex">m</script> and <script type="math/tex">c</script> are constants, represents a straight line. 
+</div>
+</p>
+<p>
+<div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<p>
+<span style="None"></span>red<script type="math/tex">m</script> is the <b class="bfseries">gradient</b> (slope) of the line and can be calculated as 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  m=\dfrac {\text{vertical change}}{\text{horizontal change}} = \dfrac {\Delta y}{\Delta x} \end{equation*}</script></span>
+<p>
+ <br/><span style="None"></span>red<script type="math/tex">c</script> is the value of <script type="math/tex">y</script> when the line crosses the <script type="math/tex">y</script>-axis (at <script type="math/tex">x=0</script>), known as the <b class="bfseries"><script type="math/tex">y</script>-intercept</b>. 
+</p>
+</div>
+</p>
+<p>
+<b class="bfseries">Note: </b>to find where the line crosses the <script type="math/tex">x</script>-axis, simply let <script type="math/tex">y=0</script>. 
+</p>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+<section class="subsection">
+<h3 id="a0000000075">1.4.1 Quadratic Equations</h3>
+<p>
+ A quadratic is a polynomial expression that can be written in the form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">ax^2+bx+c,</script></span>
+<p>
+ where <script type="math/tex">x</script> is a variable, <script type="math/tex">a\neq 0</script> and <script type="math/tex">a,b,c</script> are usually constants (but strictly, not functions of <script type="math/tex">x</script>). 
+</p>
+<p>
+A quadratic expression can be written in different forms. The two most common alternative forms are when we factorise or complete the square. 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 4. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000076">
+<li id="a0000000077" value="1">
+<p>
+<b class="bfseries">Factorising</b>
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2x^2+7x-4=(2x-1)(x+4)</script></span>
+<p>
+Notice that this is not the only version we could write. One variation which is sometimes useful is to rewrite it so that the coefficients of the x in each set of brackets is one, eg 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2x^2+7x-4=(2x-1)(x+4)=2(x-1/2)(x+4)</script></span>
+</li>
+<li id="a0000000078" value="2">
+<p>
+<b class="bfseries">Completing the square</b> To “complete the square”, we should factories to take out the coefficient of the <script type="math/tex">x</script> first, so that in the brackets we have a quadratic where the coefficient of <script type="math/tex">x</script> is 1, eg 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2x^2+7x+4=2(x^2+7/2 x+2)</script></span>
+<p>
+ Next, we are aiming for something which includes something like <script type="math/tex">(x+A)^2</script>. Considering expanding that bracket, we know that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">(x+A)^2=x^2+2Ax+A^2</script></span>
+<p>
+ so we can see that <script type="math/tex">A</script> must be equal to half the coefficient or <script type="math/tex">x</script> in the quadratic inside the brackets above. 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} 2x^2+7x+4& =&  2\left(x^2+\frac{7}{2}x+2\right)\\ & =&  2\left(\left(x+\frac{1}{2}\frac{7}{2}\right)^2+ \cdots \right) \\ & =&  =2((x+7/4)^2+ …… ) \end{array}</script></span>
+<p>
+ Next we have to work out what goes in the gap above. There are two parts to this: 
+</p>
+<ul class="itemize" id="a0000000079">
+<li id="a0000000080">
+<p>
+the constant we had in the quadratic in brackets on the first line, ie 2 
+</p>
+</li>
+<li id="a0000000081">
+<p>
+the constant we get when we expand <script type="math/tex">(x+7/4)^2</script>, ie <script type="math/tex">(7/4)^2</script> which is already included, so we need to subtract it. 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2x^2+7x+4=2\left(\left(x+\frac{7}{4}7/4\right)^2+2-\left(\frac{7}{4}\right)^2 \right)</script></span>
+</li>
+</ul>
+<p>
+Now all that’s left to do is simplify the expression 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} 2x^2+7x+4 & =&  2\left(\left(x+\frac{7}{4}\right)^2+\frac{36}{16}-\frac{49}{16}\right),\\ & =&  2\left(\left(x+\frac{7}{4}\right)^2-\frac{17}{16}\right), \end{array}</script></span>
+<p>
+ and finally, expanding the outside brackets we get 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">2\left(\left(x+\frac{7}{4}\right)^2-\frac{17}{8}\right).</script></span>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<h4 id="a0000000082">Checking</h4>
+<p>
+ We should always check our answers when we can. Since expanding brackets is usually easier than factorising or completing the square, we will most likely find any error if we do this in these cases. 
+</p>
+<section class="subsubsection">
+<h4 id="a0000000083">Quadratic Graphs</h4>
+<p>
+If we plot a quadratic function 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">ax^2+bx+c</script></span>
+<p>
+ then we get one of the two shapes illustrated in Figure   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html#img_quad1">1.1</a>
+. 
+</p>
+<figure id="img_quad1">
+<div class="centered"> <img alt="\includegraphics[scale =1]{Images/Quad1.png}" src="images/img-0003.png"/> <figcaption id="img_quad1">
+<span class="caption_title">Figure</span>
+<span class="caption_ref">1.1</span>
+<span class="caption_text">Plot showing two quadratic functions with <script type="math/tex">a<0</script>, red and <script type="math/tex">a>0</script>, blue.</span>
+</figcaption> </div>
+</figure>
+</section><section class="subsubsection">
+<h4 id="a0000000084">Quadratic equations/ roots of a quadratic</h4>
+<p>
+The roots of any polynomial, including a quadratic, are when the polynomial evaluates to zero. So in the case of a quadratic, the roots are the solutions of the quadratic equation 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">ax^2+bx+c=0.</script></span>
+<p>
+ This is equivalent to <script type="math/tex">y=0</script> on the graphs above, ie where the graph crosses the <script type="math/tex">x</script>-axis. To find the solution of a quadratic equation, we have lots of possibilities: 
+</p>
+<ul class="itemize" id="a0000000085">
+<li id="a0000000086">
+<p>
+Factorising, and then using the fact that if two factors multiplied together equal zero, then at least one of them must be zero. (Only useful if we can factorise easily.) 
+</p>
+</li>
+<li id="a0000000087">
+<p>
+Completing the square, and then rearranging the resulting equation. 
+</p>
+</li>
+<li id="a0000000088">
+<p>
+Plotting the graph, and looking for the <script type="math/tex">x</script>-intercepts. (Only as accurate as your plot.) 
+</p>
+</li>
+<li id="a0000000089">
+<p>
+Using your calculator (depends on the calculator you have). 
+</p>
+</li>
+<li id="a0000000090">
+<p>
+Using a computer algebra package (eg Desmos, Geogebra, Matlab, Python) 
+</p>
+</li>
+<li id="a0000000091">
+<p>
+<b class="bfseries">The quadratic formula</b> If <script type="math/tex">ax^2+bx+c=0</script> and <script type="math/tex">a\neq 0</script> then 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=\dfrac {-b\pm \sqrt{b^2-4ac}}{2a}.</script></span>
+<p>
+ The expression <script type="math/tex">b^2-4ac</script> is known as the discriminant. 
+</p>
+</li>
+</ul>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 5. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+Sketch the graph of <script type="math/tex">y=-3x^2-4x+5</script>, showing all the important features. 
+</p>
+</div></span>
+</p>
+</p>
+<h4 id="a0000000092">Solution</h4>
+<p>
+ What do we mean by “important features”? 
+</p>
+<dl class="description">
+<dt>General shape</dt>
+<dd><p>
+We have <script type="math/tex">a<0</script> so we are looking at an <script type="math/tex">\cap </script> shape. 
+</p>
+</dd>
+<dt>Where it crosses the axes</dt>
+<dd><p>
+The <script type="math/tex">y</script>-intercept occurs when <script type="math/tex">x=0</script>. For any quadratic <script type="math/tex">y=ax^2+bx+c</script> when <script type="math/tex">x=0</script> we have <script type="math/tex">y=c</script> so here the <script type="math/tex">y</script>-intercept is <script type="math/tex">y=5</script>. 
+</p>
+<p>
+The <script type="math/tex">x</script>-intercepts are the roots of <script type="math/tex">-3x^2-4x+5</script>, ie the solution of <script type="math/tex">-3x^2-4x+5=0.</script> Using the quadratic formula, with <script type="math/tex">a= -3, b=-4, c=5</script> we can say 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=\frac{-(-4)\pm \sqrt{(-4)^2-4(-3)(5)}}{2(-3)} = \frac{4\pm \sqrt{76}}{-6}.</script></span>
+<p>
+We can rewrite <script type="math/tex">\sqrt{76}=\sqrt{19\times 4}=2\sqrt{19}</script> which gives us <script type="math/tex">x=\frac{4\pm 2\sqrt{19}}{-6}</script> which means our two roots are 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=-\frac{1}{3}(2+\sqrt{19}) \qquad \text{ and } \qquad x=-\frac{1}{3}(2-\sqrt{19}).</script></span>
+<p>
+In this form, the answers are exact, but for the purposes of sketching, it is useful to have the decimal approximations <script type="math/tex">x=0.7863</script> and <script type="math/tex">x=-2.120</script> (4 sig fig) 
+</p>
+</dd>
+<dt>Where the minimum or maximum is</dt>
+<dd><p>
+For all quadratics, the minimum or maximum point occurs midway between the roots, at 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x= -\frac{b}{2a}.</script></span>
+<p>
+ We can easily see this by rewriting the quadratic formula slightly 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=-\frac{b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a}.</script></span>
+<p>
+In this example, we can therefore say the minimum/maximum is at <script type="math/tex">x= -\frac{2}{3}</script>. We can also say, since a= -3&lt;0, we know the curve is hill-shaped, so we are looking for a maximum. 
+</p>
+</dd>
+<dt>The height of the min/max </dt>
+<dd><p>
+Substituting <script type="math/tex">x= -\frac{2}{3}</script> into the quadratic function, we can find <script type="math/tex">y</script> at the maximum: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">y_{max} =-3\left(-\frac{2}{3}\right)^2-4(-\frac{2}{3})+5 = \frac{19}{3}</script></span>
+</dd>
+</dl>
+<p>
+Now we can sketch the graph 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000093">
+<img alt="\begin{tikzpicture} [domain =-2.35:1]
+				\draw[very thin,color=gray!50] (-3,-2.1) grid (2,7.1);
+		\draw[-&gt;,color=black] (-3,0) -- (2,0) node[right] {$x$};
+		\foreach \x in {-2,-1,0,1,2}
+		\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (3pt,0pt) node[below] 
+		{$\x$};			
+		\draw[-&gt;] (0,-2.5) -- (0,7.2) node[above] {$y$};		
+		\foreach \y in {-2,-1, ,1,2,3,4,5,6,7}		
+		\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+			{$\y$};			
+		\draw[thick,color=red]    plot (\x,{-3*\x*\x-4*\x+5}) ;%   
+		
+	\end{tikzpicture}" src="images/img-0010.svg"/>
+</div> </div>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</section><section class="subsubsection">
+<h4 id="a0000000094">The discriminant and roots</h4>
+<p>
+ You will be familiar with the idea that a quadratic can have two, one, or no real roots. We can see this easily from either the graph, or the quadratic formula. 
+</p>
+<h4 id="a0000000095">Graphically</h4>
+<div class="centered"> <div class="tikzcd" id="a0000000096">
+<img alt="\begin{tikzpicture} [domain =-3:2]
+		\draw[very thin,color=gray!50] (-3.2,-3.1) grid (2.2,4.1);
+		\draw[-&gt;,color=black] (-3,0) -- (2,0) node[right] {$x$};
+		\foreach \x in {-3,-2,-1,0,1,2}
+		\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (3pt,0pt) node[below] 
+		{$\x$};			
+		\draw[-&gt;] (0,-3.3) -- (0,4.2) node[above] {$y$};		
+		\foreach \y in {-3,-2,-1, ,1,2,3,4}		
+		\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+		{$\y$};			
+		\draw[thick,color=red]    plot (\x,{(\x+2)*(\x-1)}) ;%   
+		
+	\end{tikzpicture}" src="images/img-0011.svg"/>
+</div> </div>
+<h4 id="a0000000097">Quadratic Formula</h4>
+<p>
+Given that roots are given by 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}</script></span>
+<p>
+ we can see that if the discriminant 
+</p>
+<ul class="itemize" id="a0000000098">
+<li id="a0000000099">
+<p>
+is positive, ie <script type="math/tex">b^2-4ac>0</script> then we have two real roots, because adding and subtracting the square root gives different results. 
+</p>
+</li>
+<li id="a0000000100">
+<p>
+if the discriminant is zero, ie <script type="math/tex">b^2-4ac=0</script> then the square root is zero, which means the <script type="math/tex">\pm </script> makes no difference, and the only root is at <script type="math/tex">x=-b/2a</script>. 
+</p>
+</li>
+<li id="a0000000101">
+<p>
+if the discriminant is negative, ie <script type="math/tex">b^2-4ac<0</script> in which case, we’re looking for the square root of a negative number. Since we know that positive numbers and negative numbers squared are both positive, and zero squared is zero, the we know that there are no <b class="bfseries">real</b> roots because we cannot find the square root of a negative number... or can we? 
+</p>
+</li>
+</ul>
+<p>
+In next weeks session we will explore the square root to negative numbers i.e. what are called <b class="bfseries">complex numbers</b>. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 2. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000102">
+<li id="a0000000103" value="1">
+<p>
+Complete the square for the following quadratics:     <ol class="enumerate" id="a0000000104">
+<li id="a0000000105" value="1">
+<p>
+<script type="math/tex">x^2+5x+6</script>
+</p>
+</li>
+<li id="a0000000106" value="2">
+<p>
+<script type="math/tex">2x^2-20x+44</script>
+</p>
+</li>
+<li id="a0000000107" value="3">
+<p>
+<script type="math/tex">-4x^2+16x-17</script>
+</p>
+</li>
+</ol>
+  Check your answers by carefully expanding the brackets again. Is your answer equal to the original quadratic? 
+</p>
+</li>
+<li id="a0000000108" value="2">
+<p>
+Solve the equations (where possible)     <ol class="enumerate" id="a0000000109">
+<li id="a0000000110" value="1">
+<p>
+<script type="math/tex">x^2+5x+6=0</script>
+</p>
+</li>
+<li id="a0000000111" value="2">
+<p>
+<script type="math/tex">2x^2-20x+44=0</script>
+</p>
+</li>
+<li id="a0000000112" value="3">
+<p>
+<script type="math/tex">-4x^2+16x-17=0</script>
+</p>
+</li>
+</ol>
+  Check your answers by substituting the values back into the quadratic expression and checking that you get zero. If you believe there is no (real) solution, how can you check that this is correct? 
+</p>
+</li>
+<li id="a0000000113" value="3">
+<p>
+For each of the above equations, find the <script type="math/tex">y</script>-intercept and the value of <script type="math/tex">x</script> for which we have a minimum or maximum. Is it a maximum or minimum? Sketch the three quadratic functions and annotate with as much information as you can. 
+</p>
+<p>
+Check your answers by plotting the functions in software such as <a href="www.desmos.com">www.desmos.com</a>. Was your plot correct? 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+</section>
+</section>
+<script id="plastex-labels" type="application/json">{"HO1": {"ref": "1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html"}, "img_quad1": {"ref": "1.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html#img_quad1"}, "HO2": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html"}, "ex_quad_comp": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "ex_quad2": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "eq_quad1": {"ref": "2.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad1"}, "eq_quadsol1": {"ref": "2.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quadsol1"}, "eq_quad2": {"ref": "2.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad2"}, "HO3": {"ref": "3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html"}, "fig_ComNo_1": {"ref": "3.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_ComNo_1"}, "fig_PolarComp_1": {"ref": "3.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_PolarComp_1"}, "fig_Argand_Quad": {"ref": "3.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_Argand_Quad"}, "eq_EulerRel": {"ref": "4.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_EulerRel"}, "eq_complexnoform1": {"ref": "4.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complexnoform1"}, "eq_ComplexMult1": {"ref": "4.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult1"}, "eq_ComplexMult2": {"ref": "4.4", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult2"}, "eq_complex_powers_exponential": {"ref": "4.7", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_exponential"}, "eq_complex_powers_polar": {"ref": "4.8", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_polar"}, "eq_complex_roots1": {"ref": "4.9", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_roots1"}, "eq_complex_DeMoivres": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_deMoivre": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_complex4": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_complex4"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.1.0, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-09</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>

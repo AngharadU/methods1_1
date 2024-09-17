@@ -1,0 +1,1675 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Angharad Ugonna" />
+            <meta name="date" content="2024-09-09" />
+        
+
+        <title>4 Complex Numbers: Exponential Form and De Moivre’s Theorem | Mathematical and Statistical Methods</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1725899447.669278">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725899447.669278">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1725899447.669278">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1725899447.669278', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1725899447.669278"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1725899447.669278"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1725899447.669278"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1725899447.669278" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1725899447.669278" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1725899447.669278">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" alt="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" alt="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725899447.669278">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" alt="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Mathematical and Statistical Methods</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="index.html">Mathematical Methods - Calculus</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                4 Complex Numbers: Exponential Form and De Moivre’s Theorem
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="HO3.html">Previous: 3 Complex Numbers: Polar and Cartesian Coordinates</a>
+            
+            
+            <a rel="next" href="../../professional_mathema/index.html">Next: Professional Mathematics</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a href="pdf/complex_numbers_expo.pdf"download><svg class="icon" alt="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#a0000000002">4 Complex Numbers: Exponential Form and De Moivre’s Theorem</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000288">4.1  Exponential Form of Complex Numbers</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000289">4.1.1 Euler’s relationship</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000301">4.1.2 Multiplication in Polar/Exponential Form</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000302">Exponential Form</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000303">Solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000304">Note</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000309">Polar form</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000310">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000311">4.1.3 Division in Polar/Exponential Form</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000314">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000321">4.1.4 Powers of Complex Numbers in Exponential and Polar Form</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000322">Solution</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000334">4.1.5 Roots of Complex Numbers in Exponential and Polar Form</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000335">Algebraic interpretation</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000336">Some keypoints</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000343">Hint</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000344">4.2 De Moivre’s Theorem </a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000390">Solutions to exercises</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <!-- Latex Chapter/Part -->
+<h1 id="a0000000002">4 Complex Numbers: Exponential Form and De Moivre’s Theorem</h1>
+<section class="section">
+<h2 id="a0000000288">4.1  Exponential Form of Complex Numbers</h2>
+<section class="subsection">
+<h3 id="a0000000289">4.1.1 Euler’s relationship</h3>
+<p>
+ Today’s material all stems from one amazing fact, discovered by Leonhard Euler around 1740 (assisted by Johann Bernoulli’s and Roger Cotes’ earlier work) and first published in 1748. It is extraordinarily useful in many applications, and astonishing because it connects areas of mathematics (trigonometry, exponentials/logs, and complex numbers) which we first meet entirely independently of each other. This relationship is now named after Euler, and is 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 9. </b> <span class="rmfamily"><b class="bfseries">Eulers Relationship</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<div class="eqn" id="eq_EulerRel">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_EulerRel} \rm {e}^{i\theta } = \cos \theta + i \sin \theta\tag{4.1}\end{equation}</script>
+</div> where <dl class="description">
+<dt><script type="math/tex">\rm {e}</script></dt>
+<dd><p>
+is the base of the natural logarithm 
+</p>
+</dd>
+<dt><script type="math/tex">i</script></dt>
+<dd><p>
+is the imaginary unit and 
+</p>
+</dd>
+<dt><script type="math/tex">\theta </script></dt>
+<dd><p>
+is given in radians 
+</p>
+</dd>
+</dl>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+Proving Euler’s relationship is best done using power series for the exponential function, cosine and sine; we will meet power series in in a few weeks, and you will get to prove this relationship for yourself then. Until then, you just have to trust me. 
+</p>
+<p>
+We now have four different ways of writing a complex number. These are 
+</p>
+<div class="eqn" id="eq_complexnoform1">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_complexnoform1} \begin{array}{ll} \text{Cartesian} &  z = a+bi\\ \text{Cartesian using \(r, \theta \)} &  z = r(\cos \theta + i\sin \theta )\\ \text{Polar} &  z = r\angle \theta \\ \text{Exponential} &  z = r\rm {e}^{i\theta } \end{array}\tag{4.2}\end{equation}</script>
+</div>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 11. </b> <span class="rmfamily">Practice with different forms of a complex number <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000290">
+<li id="a0000000291" value="1">
+<p>
+Write the following complex numbers in the different form specified 
+</p>
+<ol class="enumerate" id="a0000000292">
+<li id="a0000000293" value="1">
+<p>
+<script type="math/tex">3\angle \frac{\pi }{3}</script> in exponential and Cartesian form. 
+</p>
+</li>
+<li id="a0000000294" value="2">
+<p>
+<script type="math/tex">5\angle 30^{\circ }</script> in exponential and Cartesian form. 
+</p>
+</li>
+<li id="a0000000295" value="3">
+<p>
+<script type="math/tex"> 4\rm {e}^{i\pi /2}</script> in polar and Cartesian form. 
+</p>
+</li>
+<li id="a0000000296" value="4">
+<p>
+<script type="math/tex">-6</script> in polar and exponential form. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000297" value="2">
+<p>
+Write down the following 
+</p>
+<ol class="enumerate" id="a0000000298">
+<li id="a0000000299" value="1">
+<p>
+<script type="math/tex">|21.4e^{0.625i} |</script>
+</p>
+</li>
+<li id="a0000000300" value="2">
+<p>
+<script type="math/tex">\arg {2e^{i\pi ⁄7} }</script>
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000301">4.1.2 Multiplication in Polar/Exponential Form</h3>
+<section class="subsubsection">
+<h4 id="a0000000302">Exponential Form</h4>
+<p>
+We can multiply together complex numbers which are in exponential form by using our existing knowledge about multiplication and the power laws. 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 17. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Evaluate the product of <script type="math/tex">3\rm {e}^{i\pi ⁄3}</script> and <script type="math/tex">2\rm {e}^{i\pi ⁄4}</script>
+</div></span>
+</p>
+</p>
+<h4 id="a0000000303">Solution</h4>
+<span><script type="math/tex; mode=display">\begin{eqnarray*}  (3\rm {e}^{i\pi ⁄3})(2\rm {e}^{i\pi ⁄4}) & = (3\times 2).\rm {e}^{i\pi ⁄3}.\rm {e}^{i\pi ⁄4}\\ & = 6\rm {e}^{i\pi ⁄3}.\rm {e}^{i\pi ⁄4}\\ \end{eqnarray*}</script></span>
+<p>
+ Now using the power law <script type="math/tex">a^n a^m=a^{n+m}</script> we get 
+</p>
+<span><script type="math/tex; mode=display">\begin{eqnarray*}  (3\rm {e}^{i\pi ⁄3})(2\rm {e}^{i\pi ⁄4}) & = 6\rm {e}^{i\left(\frac{\pi }{3}+\frac{\pi }{4}\right)}\\ &  = 6\rm {e}^{i\frac{7\pi }{12}}\\ \end{eqnarray*}</script></span>
+<p>
+<span class="vspace medskip"></span>
+</p>
+<p>
+We can find a more general rule for this process by considering two general complex numbers, <script type="math/tex">r_1 \rm {e}^{i\theta _1 }</script> and <script type="math/tex">r_2\rm {e}^{i\theta _2}</script>: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">(r_1 \rm {e}^{i\theta _1 })(r_2\rm {e}^{i\theta _2}) = r_1 r_2 e^{i\theta _1 }\rm {e}^{i\theta _2}</script></span>
+<p>
+ and using the power laws we get 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 10. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<div class="eqn" id="eq_ComplexMult1">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_ComplexMult1} (r_1 \rm {e}^{i\theta _1 })(r_2\rm {e}^{i\theta _2}) = r_1 r_2 e^{i(\theta _1 +\theta _2)}\tag{4.3}\end{equation}</script>
+</div>
+</div><span class="vspace medskip"></span></span>
+</p>
+</p>
+<h4 id="a0000000304">Note</h4>
+<ul class="itemize" id="a0000000305">
+<li id="a0000000306">
+<p>
+The resulting modulus is the product of the moduli we started with. 
+</p>
+</li>
+<li id="a0000000307">
+<p>
+The resulting argument is the sum of the arguments we started with 
+</p>
+</li>
+<li id="a0000000308">
+<p>
+so to calculate a product in exponential form, we multiply the moduli together, to get the modulus add the arguments to get the argument 
+</p>
+</li>
+</ul>
+</section><section class="subsubsection">
+<h4 id="a0000000309">Polar form</h4>
+<p>
+Since we know from equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complexnoform1">4.2</a>
+) that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">r\rm {e}^{i\theta } \equiv r\angle \theta</script></span>
+<p>
+ we can rewrite equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult1">4.3</a>
+) as 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 11. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<div class="eqn" id="eq_ComplexMult2">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_ComplexMult2} (r_1\angle \theta _1 )(r_2\angle \theta _2)\equiv r_1 r_2\angle (\theta _1+\theta _2 )\tag{4.4}\end{equation}</script>
+</div>
+</div><span class="vspace medskip"></span></span>
+</p>
+ In other words, we can use the result we derived in exponential form to do quick multiplication in polar form too. In fact, in this form, it doesn’t matter whether we use degrees or radians (remember, in exponential form, we definitely need to use radians). 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 18. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Evaluate <script type="math/tex">(3\angle 100^{\circ })(6\angle 120^{\circ })</script>. 
+</div></span>
+</p>
+</p>
+<h4 id="a0000000310">Solution</h4>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} (3\angle 100^{\circ })(6\angle 120^{\circ }) & =&  (3\times 6)\angle (100+120)^{\circ }\\ & =&  18\angle 220^{\circ } \end{array}</script></span>
+<p>
+ Oh, but hang on! We always give complex numbers with the smallest possible argument. quick sketch then 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">18\angle 220^{\circ } \equiv 18\angle -140^{\circ }</script></span>
+<p>
+<span class="vspace medskip"></span>
+</p>
+</section>
+</section><section class="subsection">
+<h3 id="a0000000311">4.1.3 Division in Polar/Exponential Form</h3>
+<p>
+ Division of complex numbers in exponential and polar form follows a similar and predictable pattern: 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 12. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     In exponential form: <div class="eqn" id="a0000000312">
+<script type="math/tex; mode=display">\begin{equation}\frac{r_1\rm {e}^{i\theta _1}}{r_2\rm {e}^{i\theta _2}} = \frac{r_1}{r_2}\rm {e}^{i(\theta _1-\theta _2)}\tag{4.5}\end{equation}</script>
+</div> In polar form: <div class="eqn" id="a0000000313">
+<script type="math/tex; mode=display">\begin{equation}\frac{r_1\angle \theta _1}{r_2\angle \theta _2} = \frac{r_1}{r_2} \angle (\theta _1-\theta _2)\tag{4.6}\end{equation}</script>
+</div>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 19. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+     Evaluate <script type="math/tex">3e^{i\pi /3}</script> divided by <script type="math/tex">2e^{i\pi /4}</script>. 
+</div></span>
+</p>
+</p>
+<h4 id="a0000000314">Solution</h4>
+<span class="dmath"><script type="math/tex; mode=display">\frac{3e^{i\pi /3} }{ 2e^{i\pi /4} } = \frac{3}{2}e^{i\left(\frac{\pi }{3}-\frac{\pi }{4}\right)} = \frac{3}{2}e^{i\frac{\pi }{12}}</script></span>
+<p>
+<span class="vspace medskip"></span>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 12. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Given <span class="dmath"><script type="math/tex; mode=display">z_1 = 2\angle \frac{\pi }{6}, \quad z_2 = 3\angle \frac{3\pi }{4}, \quad z_3 = 4e^{2i\pi /3}, \quad z_4 = 5e^{-i\pi /6}</script></span> calculate the following     <ol class="enumerate" id="a0000000315">
+<li id="a0000000316" value="1">
+<p>
+<script type="math/tex">z_1z_2</script>
+</p>
+</li>
+<li id="a0000000317" value="2">
+<p>
+<script type="math/tex">\frac{z_3}{z_4}</script>
+</p>
+</li>
+<li id="a0000000318" value="3">
+<p>
+<script type="math/tex">z_2z_3 </script>
+</p>
+</li>
+<li id="a0000000319" value="4">
+<p>
+<script type="math/tex">|z_1z_2z_3|</script>
+</p>
+</li>
+<li id="a0000000320" value="5">
+<p>
+<script type="math/tex">\arg \left(\frac{z_2z_4}{z_1}\right)</script>
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000321">4.1.4 Powers of Complex Numbers in Exponential and Polar Form</h3>
+<p>
+ You know that powers are simply a shorthand way of writing repeated multiplication, ie 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">z^4=z.z.z.z</script></span>
+<p>
+. It follows that finding powers of a complex number in polar or exponential form follows the same pattern as multiplication, for example 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} (r\angle \theta )^3& =& (r\angle \theta )(r\angle \theta )(r\angle \theta )\\ & =&  r.r.r\angle (\theta +\theta +\theta )\\ & =&  r^3\angle 3\theta . \end{array}</script></span>
+<p>
+We can see this more directly if we use exponential form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">(re^{i\theta })^n \equiv r^n(e^{i\theta })^n</script></span>
+<p>
+ and apply the power law 
+</p>
+<div class="eqn" id="eq_complex_powers_exponential">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_complex_powers_exponential} (re^{i\theta })^n\equiv r^n(e^{in\theta })\tag{4.7}\end{equation}</script>
+</div>
+<p>
+The general result written in polar form is 
+</p>
+<div class="eqn" id="eq_complex_powers_polar">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_complex_powers_polar} (r\angle \theta )^n \equiv r^n\angle n\theta\tag{4.8}\end{equation}</script>
+</div>
+<p>
+We can see the graphical effects of multiplication and division on an Argand diagram. Remember the key results: we multiply or divide the moduli (distance from the origin), and we add or subtract the arguments (angle relative to the axis) – equations (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult1">4.3</a>
+,   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult2">4.4</a>
+)). This is most easily demonstrated if we consider powers of a complex number: 
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 20. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+ Consider <script type="math/tex">z = 4\angle \frac{\pi }{3}</script>, Calculate <script type="math/tex">z^2,z^3,z^4</script>. 
+</p>
+</div></span>
+</p>
+</p>
+<h4 id="a0000000322">Solution</h4>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} z^2 & = 2^2\angle 2\times \frac{pi}{3} &  = 4\angle \frac{2\pi }{3}\\ z^3 & = 2^3\angle 3\times \frac{pi}{3} &  = 8\angle \pi \\ z^4 & = 2^4\angle 4\times \frac{pi}{3} &  = 16\angle \frac{4\pi }{3}\equiv 16\angle -\frac{2\pi }{3}\\ \end{array}</script></span>
+<p>
+<span class="vspace medskip"></span>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 13. </b> <span class="rmfamily"><b class="bfseries">Powers of complex numbers</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000323">
+<li id="a0000000324" value="1">
+<p>
+Given 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">z_1=2\angle \frac{\pi }{6}, \qquad z_2=3\angle \frac{3\pi }{4} \qquad \text{and} \qquad z_3=4e^{2i\pi ⁄3}</script></span>
+<p>
+ calculate the following 
+</p>
+<ol class="enumerate" id="a0000000325">
+<li id="a0000000326" value="1">
+<p>
+<script type="math/tex">z_1^2</script>
+</p>
+</li>
+<li id="a0000000327" value="2">
+<p>
+<script type="math/tex">z_3^3</script>
+</p>
+</li>
+<li id="a0000000328" value="3">
+<p>
+<script type="math/tex">z_2^{10}</script>
+</p>
+</li>
+<li id="a0000000329" value="4">
+<p>
+<script type="math/tex">\frac{1}{z_2}</script>
+</p>
+<ol class="enumerate" id="a0000000330">
+<li id="a0000000331" value="1">
+<p>
+by writing 1 in polar form and using the rule for dividing complex numbers, and 
+</p>
+</li>
+<li id="a0000000332" value="2">
+<p>
+by remembering that <script type="math/tex">\frac{1}{x}= x^{-1}</script> and using the rule for powers. 
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li id="a0000000333" value="2">
+<p>
+Sketch <script type="math/tex">z_1, z_1^2,z_1^3,z_1^4,z_1^5,z_1^6,z_1^7</script> on an Argand diagram. Hence write <script type="math/tex">z^7</script> down in the best version of polar and exponential form. 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000334">4.1.5 Roots of Complex Numbers in Exponential and Polar Form</h3>
+<p>
+ In the task above, you should have found 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{lll} z_3^3 & =&  (4e^{2i\pi ⁄3} )^3\\ & =&  4^3 e^{3(2i\pi ⁄3)} \\ & =&  64e^{2\pi i}\\ & =&  64 \end{array}</script></span>
+<p>
+But hang on… if <script type="math/tex">(4\angle \frac{2\pi }{3} )^3=64</script> then 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\sqrt[3]{64}=4\angle \frac{2\pi }{3}</script></span>
+<p>
+ but we know that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\sqrt[3]{64}=4</script></span>
+<p>
+ What is happening? 
+</p>
+<h4 id="a0000000335">Algebraic interpretation</h4>
+<p>
+ Recall that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">r\angle \theta ~ \equiv ~ r\angle (\theta + 2n\pi ), \qquad \text{where \(n\) is any integer}</script></span>
+<p>
+ In exponential form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">re^{\theta i} = re^{i(\theta + 2n\pi )}</script></span>
+<p>
+ so if we are looking for a <script type="math/tex">k</script>’th root, we are trying to find 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">(re^{\theta } )^{\frac{1}{k}} = (re^{(\theta + 2n\pi )})^{\frac{1}{k}}</script></span>
+<p>
+ Applying the power laws we know, we can say 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{ll} (re^{\theta } )^{\frac{1}{k}} & = r^{\frac{1}{k}}e^{\frac{\theta + 2n\pi }{k}}\\ & = r^{\frac{1}{k}}e^{\frac{\theta }{k}+ \frac{2n\pi }{k}} \end{array}</script></span>
+<p>
+Writing this in polar form makes it clearer 
+</p>
+<div class="eqn" id="eq_complex_roots1">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_complex_roots1} (r\angle \theta )^{\frac{1}{k}} \equiv (r\angle \left(\frac{\theta }{k} + {\frac{2n\pi }{k}}\right) \qquad \text{where } n\in \mathbb {Z}\tag{4.9}\end{equation}</script>
+</div>
+<p>
+Now let’s return to our earlier example, <script type="math/tex">\sqrt[3]{64}</script>. We can say that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">64=64\angle 0 = 64\angle (0+2n\pi )</script></span>
+<p>
+Now applying equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_roots1">4.9</a>
+), we have 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{llll} (64\angle 0)^{\frac{1}{3}} & =&  64^{\frac{1}{3}}\angle \left(\frac{1}{3}+\frac{2n\pi }{3}\right) & \\ & =&  4 \angle \frac{2n\pi }{3} &  \text{ where } n\in \mathbb {Z}\\ \end{array}</script></span>
+<p>
+ Now consider different values of <script type="math/tex">n</script>: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{array}{|l|l|} \hline n &  4\angle \frac{2n\pi }{3} \\ 0 &  4\angle 0 \\ 1 &  4\angle \frac{2\pi }{3} \\ 2 &  4\angle \frac{4\pi }{3} = 4\angle -\frac{2n\pi }{3}\\ 3 &  4\angle \frac{6\pi }{3} = 4\angle 0\\ 4 &  4\angle \frac{8\pi }{3} = 4\angle \frac{2n\pi }{3}\\ \end{array}</script></span>
+<h4 id="a0000000336">Some keypoints</h4>
+<ul class="itemize" id="a0000000337">
+<li id="a0000000338">
+<p>
+When finding <script type="math/tex">z^{1⁄k}</script> there are always <script type="math/tex">k</script> possible answers; 
+</p>
+</li>
+<li id="a0000000339">
+<p>
+these correspond to any <script type="math/tex">k</script> successive values of <script type="math/tex">n</script> in the formula above. 
+</p>
+</li>
+<li id="a0000000340">
+<p>
+We could therefore write our formula (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_roots1">4.9</a>
+) more precisely as 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">(r\angle \theta )^{\frac{1}{k}} \equiv r^{\frac{1}{k}} \angle \left(\frac{\theta }{k} + {\frac{2n\pi }{k}}\right) \qquad \text{where } n=0,1,2,...,(k-1)</script></span>
+</li>
+<li id="a0000000341">
+<p>
+The results are evenly distributed around the argand diagram; 
+</p>
+</li>
+<li id="a0000000342">
+<p>
+The <script type="math/tex">\sqrt{z}</script> notation means the principal value, ie the version with the smallest angle. 
+</p>
+</li>
+</ul>
+<p>
+Compare this last comment with what you already know. <script type="math/tex">\sqrt{4}=2</script>, not <script type="math/tex">\pm 2</script>, even though <script type="math/tex">(-2)^2=4</script>. <script type="math/tex">+2=2\angle 0</script> so this is the version with the smallest angle. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 14. </b> <span class="rmfamily">Roots of complex numbers in exponential and polar form <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Find all the solutions of the equation <script type="math/tex">z^3=i</script>. 
+</div></span>
+</p>
+</p>
+<h4 id="a0000000343">Hint</h4>
+<p>
+ Write <script type="math/tex">i</script> in polar or exponential form.  <span class="vspace medskip"></span>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000344">4.2 De Moivre’s Theorem </h2>
+<p>
+We have defined a number of ways to define a complex number and how to perform basic arithmetic. 
+</p>
+<p>
+From equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complexnoform1">4.2</a>
+) we have the number of ways in which a complex number can be written: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">z = a+bi \equiv r(\cos \theta + i\sin \theta ) \equiv r\angle \theta \equiv r\rm {e}^{i\theta }</script></span>
+<p>
+ where <script type="math/tex">r=\sqrt{a^2+b^2}</script> and <script type="math/tex">\theta = \tan ^{-1} {b}{a}</script> and equations (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_exponential">4.7</a>
+) and (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_polar">4.8</a>
+) show how we find powers of complex numbers. Rewriting the power relationship using the <script type="math/tex">r(\cos \theta +i\sin \theta )</script> form, we get De Moivre’s Theorem. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 13. </b> <span class="rmfamily"><b class="bfseries">De Moivre’s Theorem</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<div class="eqn" id="ex_deMoivre">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_complex_DeMoivres} z^n = r^n\rm {e}^{in\theta } = [r(\cos \theta +i\sin \theta )]^n = r^n(\cos n\theta +i\sin n\theta )\tag{4.10}\end{equation}</script>
+</div>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+In its trigonometric form, equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre">4.10</a>
+), it can be used to prove many of the trigonometric identities. You will explore this further in exercises. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 15. </b> <span class="rmfamily"> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Recall the trig identities for <script type="math/tex">\sin 2\theta </script> and <script type="math/tex">\cos 2\theta </script> as: <span class="dmath"><script type="math/tex; mode=display">\sin 2\theta = 2sin\theta \cos \theta \quad \text{ and } \quad \cos 2\theta = \cos ^2\theta - \sin ^2\theta .</script></span> <ol class="enumerate" id="a0000000345">
+<li id="a0000000346" value="1">
+<p>
+Use De Moivre’s theorem with <script type="math/tex">n=2</script> and <script type="math/tex">r=1</script> to prove the identities. [Hint: consider that in an equation with real and imaginary parts, the real parts either side of the equals sign and the imaginary parts either side of the equals sign must balance. In other words, we can deduce two equations from a single complex equation. Amazing!] 
+</p>
+</li>
+<li id="ex_complex4" value="2">
+<p>
+Now find trig identities for <script type="math/tex">\sin 3\theta </script> and <script type="math/tex">\cos 3\theta </script> in terms of <script type="math/tex">\sin \theta </script> and <script type="math/tex">\cos \theta </script>. 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 16. </b> <span class="rmfamily"> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+     Do as many of these as you need to in order to be confident that you (a) can get the right answer and (b) understand what you’re doing. If you don’t want to do all the questions, then at least try the ones that look like they are the hardest ones.     <ol class="enumerate" id="a0000000347">
+<li id="a0000000348" value="1">
+<p>
+Express the following in exponential form:     <ol class="enumerate" id="a0000000349">
+<li id="a0000000350" value="1">
+<p>
+<script type="math/tex">3\angle -\frac{2\pi }{3}</script>
+</p>
+</li>
+<li id="a0000000351" value="2">
+<p>
+<script type="math/tex">1\angle \frac{\pi }{12}</script>
+</p>
+</li>
+<li id="a0000000352" value="3">
+<p>
+<script type="math/tex">2\left(\cos \left(\frac{\pi }{12}\right)+i\sin \left(\frac{\pi }{12}\right)\right) </script>
+</p>
+</li>
+<li id="a0000000353" value="4">
+<p>
+<script type="math/tex">-\frac{1}{2}-\frac{\sqrt{3}}{2}</script>
+</p>
+</li>
+<li id="a0000000354" value="5">
+<p>
+<script type="math/tex">i</script>
+</p>
+</li>
+<li id="a0000000355" value="6">
+<p>
+<script type="math/tex">-2i</script>
+</p>
+</li>
+<li id="a0000000356" value="7">
+<p>
+<script type="math/tex">-4</script>. 
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000357" value="2">
+<p>
+Substitute into Euler’s relationship and hence prove arguably the most elegant equation in mathematics, which includes the five most important numbers, namely 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">e^{i\pi }+1=0.</script></span>
+</li>
+<li id="a0000000358" value="3">
+<p>
+Write these in Cartesian form [no calculation should be necessary but a sketch might help] 
+</p>
+<ol class="enumerate" id="a0000000359">
+<li id="a0000000360" value="1">
+<p>
+<script type="math/tex">4e^{\pi i⁄2}</script>
+</p>
+</li>
+<li id="a0000000361" value="2">
+<p>
+<script type="math/tex">3e^{-\pi i⁄2}</script>
+</p>
+</li>
+<li id="a0000000362" value="3">
+<p>
+<script type="math/tex">5e^{i\pi }</script>
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000363" value="4">
+<p>
+Write down <script type="math/tex">|3e^{2i}|</script> and <script type="math/tex">\arg (3e^{2i})</script> [No calculation should be necessary]. Sketch <script type="math/tex">3e^{2i}</script> on an Argand diagram. 
+</p>
+</li>
+<li id="a0000000364" value="5">
+<p>
+Calculate the following making sure your answer is given in the simplest form possible. 
+</p>
+<ol class="enumerate" id="a0000000365">
+<li id="a0000000366" value="1">
+<p>
+<script type="math/tex">2\angle \pi \times 1\angle -\pi </script> [what real numbers do these represent? Check that your result is consistent with what we would get with simple real number multiplication] 
+</p>
+</li>
+<li id="a0000000367" value="2">
+<p>
+<script type="math/tex">2\angle 150^{\circ } \times 4\angle 120^{\circ }</script>
+</p>
+</li>
+<li id="a0000000368" value="3">
+<p>
+<script type="math/tex">3e^{i\pi /2}.4e^{i\pi ⁄6}</script>
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000369" value="6">
+<p>
+If 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">z_1 = 2\angle \frac{\pi }{3}, \quad z_2 = 10\angle \frac{\pi }{2} \qquad \text{and} \qquad z_3 = 5\angle \pi</script></span>
+<p>
+ find     <ol class="enumerate" id="a0000000370">
+<li id="a0000000371" value="1">
+<p>
+<script type="math/tex">\left|\frac{z_1z_2}{z_3}\right|</script>
+</p>
+</li>
+<li id="a0000000372" value="2">
+<p>
+<script type="math/tex">\arg \left(\frac{z_1z_2}{z_3}\right) </script>
+</p>
+</li>
+<li id="a0000000373" value="3">
+<p>
+<script type="math/tex">|z_1^5|</script>
+</p>
+</li>
+<li id="a0000000374" value="4">
+<p>
+<script type="math/tex">\arg (z_1^5)</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000375" value="7">
+<p>
+If 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">z_1 = r_1\angle \theta _1 \qquad \text{and} \qquad z_2 = r_2\angle \theta _2,</script></span>
+<p>
+ write down     <ol class="enumerate" id="a0000000376">
+<li id="a0000000377" value="1">
+<p>
+<script type="math/tex">|z_1z_2|</script>
+</p>
+</li>
+<li id="a0000000378" value="2">
+<p>
+<script type="math/tex">\arg (z_1z_2)</script>
+</p>
+</li>
+<li id="a0000000379" value="3">
+<p>
+<script type="math/tex">\left|\frac{z_1}{z_2}\right|</script>
+</p>
+</li>
+<li id="a0000000380" value="4">
+<p>
+<script type="math/tex">\arg \left(\frac{z_1}{z_2}\right)</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000381" value="8">
+<p>
+Find     <ol class="enumerate" id="a0000000382">
+<li id="a0000000383" value="1">
+<p>
+<script type="math/tex">\left(3\angle \frac{2\pi }{3}\right)^6 </script>
+</p>
+</li>
+<li id="a0000000384" value="2">
+<p>
+<script type="math/tex"> \left(2\rm {e}^{\frac{i\pi }{2}}\right)^6</script>
+</p>
+</li>
+<li id="a0000000385" value="3">
+<p>
+<script type="math/tex">(1-i)^6 </script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000386" value="9">
+<p>
+Solve     <ol class="enumerate" id="a0000000387">
+<li id="a0000000388" value="1">
+<p>
+<script type="math/tex">z^2 = 3\angle \frac{\pi }{3}</script>
+</p>
+</li>
+<li id="a0000000389" value="2">
+<p>
+<script type="math/tex">z^3 = 8</script>
+</p>
+</li>
+</ol>
+  and sketch your answers on an Argand diagram. If you had found, say <script type="math/tex">\sqrt[3]{8}</script> before learning about complex numbers, what answer would you have got? Is this consistent with the complex answers you get? 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<br/>
+</p>
+<h4 id="a0000000390">Solutions to exercises</h4>
+<p>
+Answer for Exercise   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre">4.10</a>
+ part (2) 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\cos 3\theta \equiv \cos ^3\theta -3\cos \theta \sin ^2\theta \qquad \text{ and } \qquad \sin 3\theta \equiv -\sin ^3\theta +3\cos ^2\theta \sin \theta .</script></span>
+<p>
+Answers for Exercise   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_complex4">2</a>
+: 
+</p>
+<ol class="enumerate" id="a0000000391">
+<li id="a0000000392" value="1">
+<p>
+<ol class="enumerate" id="a0000000393">
+<li id="a0000000394" value="1">
+<p>
+<script type="math/tex">3e^{-2\pi i⁄3} </script>
+</p>
+</li>
+<li id="a0000000395" value="2">
+<p>
+<script type="math/tex">e^{i\pi ⁄12} </script>
+</p>
+</li>
+<li id="a0000000396" value="3">
+<p>
+<script type="math/tex">2e^{i\pi ⁄12} </script>
+</p>
+</li>
+<li id="a0000000397" value="4">
+<p>
+<script type="math/tex">e^{-2\pi i⁄3}</script>
+</p>
+</li>
+<li id="a0000000398" value="5">
+<p>
+<script type="math/tex">e^{i\pi ⁄2} </script>
+</p>
+</li>
+<li id="a0000000399" value="6">
+<p>
+<script type="math/tex">2e^{-i\pi )⁄2} </script>
+</p>
+</li>
+<li id="a0000000400" value="7">
+<p>
+<script type="math/tex"> 4e^{\pi i} .</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000401" value="2">
+</li>
+<li id="a0000000402" value="3">
+<p>
+<ol class="enumerate" id="a0000000403">
+<li id="a0000000404" value="1">
+<p>
+<script type="math/tex">4i</script>
+</p>
+</li>
+<li id="a0000000405" value="2">
+<p>
+<script type="math/tex">-3i</script>
+</p>
+</li>
+<li id="a0000000406" value="3">
+<p>
+<script type="math/tex">-5</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000407" value="4">
+<p>
+<ol class="enumerate" id="a0000000408">
+<li id="a0000000409" value="1">
+<p>
+3 
+</p>
+</li>
+<li id="a0000000410" value="2">
+<p>
+2 
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000411" value="5">
+<p>
+<ol class="enumerate" id="a0000000412">
+<li id="a0000000413" value="1">
+<p>
+2 
+</p>
+</li>
+<li id="a0000000414" value="2">
+<p>
+<script type="math/tex">-8i</script>
+</p>
+</li>
+<li id="a0000000415" value="3">
+<p>
+<script type="math/tex">12e^{2\pi i⁄3}.</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000416" value="6">
+<p>
+<ol class="enumerate" id="a0000000417">
+<li id="a0000000418" value="1">
+<p>
+4 
+</p>
+</li>
+<li id="a0000000419" value="2">
+<p>
+<script type="math/tex">-\pi /6</script>
+</p>
+</li>
+<li id="a0000000420" value="3">
+<p>
+32 
+</p>
+</li>
+<li id="a0000000421" value="4">
+<p>
+<script type="math/tex">5\pi /3</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000422" value="7">
+<p>
+<ol class="enumerate" id="a0000000423">
+<li id="a0000000424" value="1">
+<p>
+<script type="math/tex">r_1 r_2</script>
+</p>
+</li>
+<li id="a0000000425" value="2">
+<p>
+<script type="math/tex">\theta _1+ \theta _2</script>
+</p>
+</li>
+<li id="a0000000426" value="3">
+<p>
+<script type="math/tex">r_1/r_2</script>
+</p>
+</li>
+<li id="a0000000427" value="4">
+<p>
+<script type="math/tex">\theta _1-\theta _2</script>. 
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000428" value="8">
+<p>
+<ol class="enumerate" id="a0000000429">
+<li id="a0000000430" value="1">
+<p>
+729 
+</p>
+</li>
+<li id="a0000000431" value="2">
+<p>
+-64 
+</p>
+</li>
+<li id="a0000000432" value="3">
+<p>
+<script type="math/tex">8i</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000433" value="9">
+<p>
+<ol class="enumerate" id="a0000000434">
+<li id="a0000000435" value="1">
+<p>
+<script type="math/tex">\sqrt{3}\angle \frac{\pi }{6}</script> and <script type="math/tex">\sqrt{3}\angle -\frac{5\pi }{6}</script>
+</p>
+</li>
+<li id="a0000000436" value="2">
+<p>
+2 and <script type="math/tex">2\angle \frac{2\pi }{3}</script> and <script type="math/tex">2\angle -\frac{2\pi }{3}.</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+</ol>
+</section>
+<script id="plastex-labels" type="application/json">{"HO1": {"ref": "1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html"}, "img_quad1": {"ref": "1.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO1.html#img_quad1"}, "HO2": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html"}, "ex_quad_comp": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "ex_quad2": {"ref": "None", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#ex_quad2"}, "eq_quad1": {"ref": "2.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad1"}, "eq_quadsol1": {"ref": "2.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quadsol1"}, "eq_quad2": {"ref": "2.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO2.html#eq_quad2"}, "HO3": {"ref": "3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html"}, "fig_ComNo_1": {"ref": "3.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_ComNo_1"}, "fig_PolarComp_1": {"ref": "3.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_PolarComp_1"}, "fig_Argand_Quad": {"ref": "3.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/HO3.html#fig_Argand_Quad"}, "eq_EulerRel": {"ref": "4.1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_EulerRel"}, "eq_complexnoform1": {"ref": "4.2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complexnoform1"}, "eq_ComplexMult1": {"ref": "4.3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult1"}, "eq_ComplexMult2": {"ref": "4.4", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_ComplexMult2"}, "eq_complex_powers_exponential": {"ref": "4.7", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_exponential"}, "eq_complex_powers_polar": {"ref": "4.8", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_powers_polar"}, "eq_complex_roots1": {"ref": "4.9", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#eq_complex_roots1"}, "eq_complex_DeMoivres": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_deMoivre": {"ref": "4.10", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_deMoivre"}, "ex_complex4": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_1/Maths_Methods/build/default/methods/mathematical_methods/0001.html#ex_complex4"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.1.0, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-09</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
